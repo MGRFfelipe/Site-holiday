@@ -1,4 +1,4 @@
-// Script para p�gina de SIGNUP
+﻿// Script para pegina de SIGNUP
 
 let userEmail = '';
 let verificationTimer = null;
@@ -7,7 +7,7 @@ const RESEND_COOLDOWN = 30000; // 30 segundos entre reenvios
 
 // Esperar o DOM carregar completamente
 document.addEventListener('DOMContentLoaded', function() {
-    console.log(' P�gina carregada');
+    console.log(' Pegina carregada');
     
     const signupForm = document.getElementById('signupForm');
     const verifyForm = document.getElementById('verifyForm');
@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
     
     if (!signupForm) {
-        console.error(' Formul�rio de signup n�o encontrado!');
+        console.error(' Formulerio de signup neo encontrado!');
         return;
     }
     
     console.log(' Elementos encontrados, registrando eventos...');
     
-    // Evento de submit do formul�rio
+    // Evento de submit do formulerio
     signupForm.addEventListener('submit', async (e) => {
-        console.log(' Formul�rio enviado');
+        console.log(' Formulerio enviado');
         e.preventDefault();
         clearErrors();
 
@@ -54,17 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (nickname.length < 1) {
-            document.getElementById('nicknameError').textContent = 'Nickname � obrigat�rio';
+            document.getElementById('nicknameError').textContent = 'Nickname e obrigaterio';
             return;
         }
 
         if (password.length < 6) {
-            document.getElementById('passwordError').textContent = 'Senha deve ter no m�nimo 6 caracteres';
+            document.getElementById('passwordError').textContent = 'Senha deve ter no menimo 6 caracteres';
             return;
         }
 
         if (password !== confirmPassword) {
-            document.getElementById('confirmPasswordError').textContent = 'Senhas n�o conferem';
+            document.getElementById('confirmPasswordError').textContent = 'Senhas neo conferem';
             return;
         }
 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
             userEmail = email;
             lastResendTime = Date.now();
             
-            console.log(' Usu�rio criado, mostrando modal');
+            console.log(' Usuerio criado, mostrando modal');
             document.getElementById('verifyEmail').textContent = email;
             document.getElementById('signupForm').style.display = 'none';
             document.getElementById('verifyModal').style.display = 'flex';
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Evento de verifica��o de email
+    // Evento de verificaeeo de email
     if (verifyForm) {
         verifyForm.addEventListener('submit', async (e) => {
             console.log(' Verificando email');
@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const code = document.getElementById('verificationCode').value.trim();
             
             if (!code || code.length !== 6) {
-                document.getElementById('verifyError').textContent = 'Insira um c�digo v�lido com 6 d�gitos';
+                document.getElementById('verifyError').textContent = 'Insira um cedigo velido com 6 degitos';
                 return;
             }
             
-            console.log(' Enviando c�digo:', code);
+            console.log(' Enviando cedigo:', code);
             const result = await AuthAPI.verifyEmail(userEmail, code);
             console.log('Resposta:', result);
             
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Email verificado com sucesso! ');
                 window.location.href = 'profile.html';
             } else {
-                document.getElementById('verifyError').textContent = result.message || 'C�digo inv�lido ou expirado';
+                document.getElementById('verifyError').textContent = result.message || 'Cedigo invelido ou expirado';
                 console.error('Erro:', result.message);
             }
         });
@@ -146,14 +146,14 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(' Eventos registrados com sucesso');
 });
 
-// Timer de 4 minutos para verifica��o
+// Timer de 4 minutos para verificaeeo
 function startVerificationTimer() {
     let timeLeft = 240; // 4 minutos em segundos
     const timerElement = document.getElementById('verificationTimer');
     const resendBtn = document.getElementById('resendBtn');
     
     if (!timerElement || !resendBtn) {
-        console.warn('Elementos de timer n�o encontrados');
+        console.warn('Elementos de timer neo encontrados');
         return;
     }
 
@@ -166,7 +166,7 @@ function startVerificationTimer() {
         
         if (timeLeft <= 0) {
             clearVerificationTimer();
-            timerElement.textContent = 'C�digo expirado! Reenvie um novo c�digo.';
+            timerElement.textContent = 'Cedigo expirado! Reenvie um novo cedigo.';
             timerElement.style.color = '#FF0000';
             document.getElementById('verifyForm').style.pointerEvents = 'none';
             document.getElementById('verifyForm').style.opacity = '0.5';
@@ -177,7 +177,7 @@ function startVerificationTimer() {
 function updateTimerDisplay(seconds, element) {
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    element.textContent = `V�lido por ${minutes}:${secs.toString().padStart(2, '0')}`;
+    element.textContent = `Velido por ${minutes}:${secs.toString().padStart(2, '0')}`;
 }
 
 function clearVerificationTimer() {
@@ -187,7 +187,7 @@ function clearVerificationTimer() {
     }
 }
 
-// Reenviar c�digo
+// Reenviar cedigo
 async function resendVerificationCode() {
     const now = Date.now();
     
@@ -205,7 +205,7 @@ async function resendVerificationCode() {
     
     if (result.success) {
         lastResendTime = now;
-        document.getElementById('verifyError').textContent = '? Novo c�digo enviado para seu email!';
+        document.getElementById('verifyError').textContent = '? Novo cedigo enviado para seu email!';
         document.getElementById('verifyError').style.color = '#00FF00';
         document.getElementById('verificationCode').value = '';
         
@@ -213,15 +213,15 @@ async function resendVerificationCode() {
         clearVerificationTimer();
         startVerificationTimer();
         
-        // Spinner no bot�o
+        // Spinner no boteo
         setTimeout(() => {
             resendBtn.disabled = false;
-            resendBtn.textContent = 'Reenviar C�digo';
+            resendBtn.textContent = 'Reenviar Cedigo';
         }, 2000);
     } else {
-        document.getElementById('verifyError').textContent = result.message || 'Erro ao reenviar c�digo';
+        document.getElementById('verifyError').textContent = result.message || 'Erro ao reenviar cedigo';
         resendBtn.disabled = false;
-        resendBtn.textContent = 'Reenviar C�digo';
+        resendBtn.textContent = 'Reenviar Cedigo';
     }
 }
 

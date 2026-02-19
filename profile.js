@@ -1,4 +1,4 @@
-// Script para p�gina de PROFILE
+﻿// Script para pegina de PROFILE
 
 let currentUser = null;
 let currentRank = null;
@@ -77,239 +77,239 @@ const LIKE_ACHIEVEMENT_RANKS = [
 const PROFILE_TAGLINE_SUGGESTIONS = Array.from(new Set([
     'Vivendo um dia de cada vez',
     'Energia boa atrai coisa boa',
-    'Menos drama mais caf�',
-    'Sorriso � meu cart�o de visita',
+    'Menos drama mais cafe',
+    'Sorriso e meu carteo de visita',
     'Sonhador(a) em tempo integral',
-    'Simplicidade � meu luxo favorito',
-    'Sempre em busca de novas hist�rias',
+    'Simplicidade e meu luxo favorito',
+    'Sempre em busca de novas histerias',
     'Paz na alma brilho no olhar',
-    'O mundo � grande demais para ficar parado',
-    'Gratid�o � meu estilo de vida',
-    'Criando mem�rias n�o desculpas',
-    'Quem tem luz pr�pria n�o precisa de holofote',
+    'O mundo e grande demais para ficar parado',
+    'Gratideo e meu estilo de vida',
+    'Criando memerias neo desculpas',
+    'Quem tem luz prepria neo precisa de holofote',
     'Amante de pequenos detalhes',
     'Errando aprendendo evoluindo',
-    'Liberdade � meu combust�vel',
-    'Risadas s�o meu idioma favorito',
-    'Colecionando momentos n�o coisas',
-    'A vida � curta demais para n�o ser intensa',
-    'Sempre pronto(a) para a pr�xima aventura',
+    'Liberdade e meu combustevel',
+    'Risadas seo meu idioma favorito',
+    'Colecionando momentos neo coisas',
+    'A vida e curta demais para neo ser intensa',
+    'Sempre pronto(a) para a prexima aventura',
     'Autenticidade acima de tudo',
     ...`Brilho onde a vida me coloca
-Sou minha melhor vers�o em constru��o
+Sou minha melhor verseo em construeeo
 Energia boa atrai coisa boa
-O imposs�vel � s� quest�o de opini�o
-Viver � colecionar momentos n�o coisas
-Gratid�o muda tudo
-O sorriso � meu cart�o de visita
-F� no futuro for�a no presente
-Quem acredita sempre alcan�a
-A vida � agora
-Dormir � meu esporte favorito
-Caf� meu combust�vel oficial
-Ironia � meu idioma nativo
-Quem n�o gosta de meme n�o gosta de mim
+O impossevel e se questeo de opinieo
+Viver e colecionar momentos neo coisas
+Gratideo muda tudo
+O sorriso e meu carteo de visita
+Fe no futuro forea no presente
+Quem acredita sempre alcanea
+A vida e agora
+Dormir e meu esporte favorito
+Cafe meu combustevel oficial
+Ironia e meu idioma nativo
+Quem neo gosta de meme neo gosta de mim
 Sou 50% risada 50% caos
-Minha vibe � paz e pizza
-Se n�o for pra rir nem me chama
-Drama s� na Netflix
-Wi-Fi forte cora��o leve
-Sou edi��o limitada
-O sil�ncio tamb�m fala
+Minha vibe e paz e pizza
+Se neo for pra rir nem me chama
+Drama se na Netflix
+Wi-Fi forte coraeeo leve
+Sou edieeo limitada
+O silencio tambem fala
 O tempo cura ensina e revela
-O que � verdadeiro permanece
-A vida � feita de ciclos
-O essencial � invis�vel aos olhos
-Cada fim � um novo come�o
-O cora��o sabe antes da raz�o
+O que e verdadeiro permanece
+A vida e feita de ciclos
+O essencial e invisevel aos olhos
+Cada fim e um novo comeeo
+O coraeeo sabe antes da razeo
 O caminho importa mais que o destino
-O amor � sempre a resposta
-Nada � por acaso
-Amar � minha forma favorita de existir
-O cora��o � meu guia
-Amor pr�prio � meu primeiro amor
+O amor e sempre a resposta
+Nada e por acaso
+Amar e minha forma favorita de existir
+O coraeeo e meu guia
+Amor preprio e meu primeiro amor
 Quem ama cuida
-O amor � infinito em detalhes
-Meu cora��o � poesia
-Amar � viver duas vezes
-O amor � minha religi�o
-O sorriso de quem amo � meu sol
-Amor � liberdade
-N�o sigo regras sigo meu cora��o
-Sou dono da minha hist�ria
+O amor e infinito em detalhes
+Meu coraeeo e poesia
+Amar e viver duas vezes
+O amor e minha religieo
+O sorriso de quem amo e meu sol
+Amor e liberdade
+Neo sigo regras sigo meu coraeeo
+Sou dono da minha histeria
 Quem me subestima me fortalece
-Ousadia � meu sobrenome
-N�o vim pra competir vim pra conquistar
-Minha vibe n�o � pra qualquer um
+Ousadia e meu sobrenome
+Neo vim pra competir vim pra conquistar
+Minha vibe neo e pra qualquer um
 Sou intensidade pura
-Quem n�o arrisca n�o vive
-Minha energia n�o � negoci�vel
+Quem neo arrisca neo vive
+Minha energia neo e negocievel
 Sou tempestade e calmaria
 Mundo pequeno sonhos gigantes
-Viajar � meu v�cio favorito
-O mundo � meu quintal
-Cada lugar tem uma hist�ria
-A vida � feita de encontros
-O planeta � lindo demais pra ficar parado
+Viajar e meu vecio favorito
+O mundo e meu quintal
+Cada lugar tem uma histeria
+A vida e feita de encontros
+O planeta e lindo demais pra ficar parado
 Quero colecionar passaportes carimbados
-Cultura � riqueza
-O mundo � diverso e eu tamb�m
-Sou cidad�o do universo
-Vivo em ritmo de m�sica
-Minha playlist � meu di�rio
-M�sica � terapia
-Cada batida � um peda�o de mim
+Cultura e riqueza
+O mundo e diverso e eu tambem
+Sou cidadeo do universo
+Vivo em ritmo de mesica
+Minha playlist e meu dierio
+Mesica e terapia
+Cada batida e um pedaeo de mim
 A vida tem trilha sonora
 Sou nota fora da escala
-M�sica � linguagem universal
+Mesica e linguagem universal
 Vivo em acordes e versos
-O fone � meu ref�gio
-M�sica � minha alma cantando
-N�o sou para todos
+O fone e meu refegio
+Mesica e minha alma cantando
+Neo sou para todos
 Quem entende fica
 Sou intensidade sem manual
-N�o me decifrem me sintam
+Neo me decifrem me sintam
 Sou caos organizado
-Minha ess�ncia n�o se copia
-Quem n�o aguenta n�o acompanha
+Minha essencia neo se copia
+Quem neo aguenta neo acompanha
 Sou fogo e calmaria
-N�o sou op��o sou escolha
-Sou raro n�o perfeito
-Flores�o onde sou regada
-Sou p�tala e espinho
-A vida � jardim eu sou flor
-Delicadeza � for�a
-O vento leva mas eu renas�o
+Neo sou opeeo sou escolha
+Sou raro neo perfeito
+Floreseo onde sou regada
+Sou petala e espinho
+A vida e jardim eu sou flor
+Delicadeza e forea
+O vento leva mas eu renaseo
 Sou poesia em movimento
-Beleza est� nos detalhes
+Beleza este nos detalhes
 Sou brisa leve
-A vida � feita de cores suaves
+A vida e feita de cores suaves
 Sou primavera eterna
-Nem tudo que mostro � tudo que sou
-Mist�rio � meu charme
+Nem tudo que mostro e tudo que sou
+Misterio e meu charme
 Sou enigma em carne e osso
 Quem sabe entende
 Nem sempre revelo mas sempre sinto
 Sou segredo bem guardado
-O mist�rio me define
+O misterio me define
 Nem tudo precisa ser explicado
 Sou sombra e luz
-Descobrir-me � aventura
+Descobrir-me e aventura
 Sou luz em dias nublados
-A vida � feita de escolhas
-O tempo � meu melhor conselheiro
+A vida e feita de escolhas
+O tempo e meu melhor conselheiro
 Sou feito de sonhos e coragem
-A vida � curta demais pra esperar
+A vida e curta demais pra esperar
 Sou paz em meio ao caos
-Cada dia � uma nova chance
-Sou feito de hist�rias
-A vida � movimento
-Sou for�a e delicadeza
-O futuro � agora
+Cada dia e uma nova chance
+Sou feito de histerias
+A vida e movimento
+Sou forea e delicadeza
+O futuro e agora
 Sou feito de momentos
-A vida � aprendizado
+A vida e aprendizado
 Sou coragem em forma de gente
-O amanh� � promessa
+O amanhe e promessa
 Sou intensidade em cada detalhe
-A vida � presente
-Sou feito de f�
-O tempo � tesouro
-Sou esperan�a em pessoa
-A vida � poesia
+A vida e presente
+Sou feito de fe
+O tempo e tesouro
+Sou esperanea em pessoa
+A vida e poesia
 Sou feito de amor
-O mundo � meu palco
+O mundo e meu palco
 Sou feito de liberdade
-A vida � descoberta
+A vida e descoberta
 Sou feito de risos
-O tempo � arte
+O tempo e arte
 Sou feito de verdades
-A vida � m�gica
+A vida e megica
 Sou feito de cores
-O mundo � inspira��o
+O mundo e inspiraeeo
 Sou feito de sonhos grandes
-A vida � aventura
-Sou feito de f� e for�a
-O tempo � caminho
-Sou feito de esperan�a
-A vida � m�sica
+A vida e aventura
+Sou feito de fe e forea
+O tempo e caminho
+Sou feito de esperanea
+A vida e mesica
 Sou feito de coragem
-O mundo � oportunidade
-Sou feito de gratid�o
-A vida � luz
+O mundo e oportunidade
+Sou feito de gratideo
+A vida e luz
 Sou feito de intensidade
-O tempo � mestre
+O tempo e mestre
 Sou feito de escolhas
-A vida � jornada
+A vida e jornada
 Sou feito de paz
-O mundo � diverso
+O mundo e diverso
 Sou feito de energia boa
-A vida � presente constante
+A vida e presente constante
 Sou feito de simplicidade
-O tempo � resposta
+O tempo e resposta
 Sou feito de alegria
-A vida � surpresa
-Sou feito de f� no imposs�vel
-O mundo � infinito
-Sou feito de amor pr�prio
-A vida � transforma��o
+A vida e surpresa
+Sou feito de fe no impossevel
+O mundo e infinito
+Sou feito de amor preprio
+A vida e transformaeeo
 Sou feito de sonhos reais
-O tempo � aliado
-Sou feito de esperan�a viva
-A vida � movimento constante
-Sou feito de coragem di�ria
-O mundo � meu lugar
-Sou feito de gratid�o sincera
-A vida � feita de detalhes
+O tempo e aliado
+Sou feito de esperanea viva
+A vida e movimento constante
+Sou feito de coragem dieria
+O mundo e meu lugar
+Sou feito de gratideo sincera
+A vida e feita de detalhes
 Sou feito de intensidade pura
-O tempo � revela��o
-Sou feito de f� verdadeira
-A vida � feita de encontros
+O tempo e revelaeeo
+Sou feito de fe verdadeira
+A vida e feita de encontros
 Sou feito de amor sem limites
-O mundo � feito de possibilidades
+O mundo e feito de possibilidades
 Sou feito de paz interior
-A vida � feita de escolhas simples
+A vida e feita de escolhas simples
 Sou feito de alegria contagiante
-O tempo � cura
-Sou feito de esperan�a constante
-A vida � feita de momentos �nicos
+O tempo e cura
+Sou feito de esperanea constante
+A vida e feita de momentos enicos
 Sou feito de coragem sem medo
-O mundo � feito de diversidade
-Sou feito de gratid�o infinita
-A vida � feita de surpresas boas
+O mundo e feito de diversidade
+Sou feito de gratideo infinita
+A vida e feita de surpresas boas
 Sou feito de intensidade sem fim
-O tempo � sabedoria
-Sou feito de f� que move
-A vida � feita de sonhos poss�veis
+O tempo e sabedoria
+Sou feito de fe que move
+A vida e feita de sonhos posseveis
 Sou feito de amor que transforma
-O mundo � feito de cores
+O mundo e feito de cores
 Sou feito de paz que acalma
-A vida � feita de risos
-Sou feito de esperan�a que guia
-O tempo � aprendizado
+A vida e feita de risos
+Sou feito de esperanea que guia
+O tempo e aprendizado
 Sou feito de coragem que inspira
-A vida � feita de luz
-Sou feito de gratid�o que fortalece
-O mundo � feito de encontros
+A vida e feita de luz
+Sou feito de gratideo que fortalece
+O mundo e feito de encontros
 Sou feito de intensidade que marca
-A vida � feita de f�
+A vida e feita de fe
 Sou feito de amor que liberta
-O tempo � oportunidade
+O tempo e oportunidade
 Sou feito de paz que ilumina
-A vida � feita de escolhas certas
-Sou feito de esperan�a que renova
-O mundo � feito de sonhos
-Sou feito de coragem que constr�i
-A vida � feita de gratid�o
+A vida e feita de escolhas certas
+Sou feito de esperanea que renova
+O mundo e feito de sonhos
+Sou feito de coragem que constrei
+A vida e feita de gratideo
 Sou feito de intensidade que contagia
-O tempo � presente
-Sou feito de f� que sustenta
-A vida � feita de amor
+O tempo e presente
+Sou feito de fe que sustenta
+A vida e feita de amor
 Sou feito de paz que transforma
-O mundo � feito de f�
-Sou feito de esperan�a que floresce
-A vida � feita de coragem
-Sou feito de gratid�o que inspira
-O tempo � vida
+O mundo e feito de fe
+Sou feito de esperanea que floresce
+A vida e feita de coragem
+Sou feito de gratideo que inspira
+O tempo e vida
 Sou feito de intensidade que vive`.split('\n').map((item) => item.trim()).filter(Boolean)
 ]));
 
@@ -345,7 +345,7 @@ function normalizeRankOrderKey(value) {
         const trimmed = value.trim();
         if (!trimmed) return '';
 
-        // J� est� normalizado
+        // Je este normalizado
         if (trimmed.startsWith('n:')) {
             const id = Number(trimmed.slice(2));
             return Number.isFinite(id) ? `n:${id}` : '';
@@ -446,7 +446,7 @@ function syncEmailToggleButton() {
     toggleEmailBtn.textContent = isHidden ? 'Mostrar' : 'Ocultar';
 }
 
-// Sistema de notifica��o customizada
+// Sistema de notificaeeo customizada
 function showNotification(message, type = 'success') {
     const toast = document.getElementById('notificationToast');
     
@@ -465,7 +465,7 @@ function showNotification(message, type = 'success') {
         clearTimeout(notificationTimeout);
     }
     
-    // Esconder ap�s 4 segundos
+    // Esconder apes 4 segundos
     notificationTimeout = setTimeout(() => {
         toast.classList.add('hide');
         setTimeout(() => {
@@ -479,8 +479,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     if (typeof RouteGuard !== 'undefined') {
         const allowed = await RouteGuard.requireAuth({
-            loginMessage: 'Fa�a login para acessar seu perfil',
-            invalidSessionMessage: 'Sess�o inv�lida. Fa�a login novamente.',
+            loginMessage: 'Faea login para acessar seu perfil',
+            invalidSessionMessage: 'Sesseo invelida. Faea login novamente.',
             validateSession: true
         });
         if (!allowed) return;
@@ -488,7 +488,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const token = AuthAPI.getToken();
         console.log('Token found:', token ? 'YES (length: ' + token.length + ')' : 'NO');
         if (!token) {
-            window.location.href = 'login.html?message=' + encodeURIComponent('Fa�a login para acessar seu perfil');
+            window.location.href = 'login.html?message=' + encodeURIComponent('Faea login para acessar seu perfil');
             return;
         }
     }
@@ -507,10 +507,10 @@ async function loadProfile() {
         console.log('[PROFILE] Profile response received:', result);
 
         if (!result.success || !result.user) {
-            const shouldForceLogin = result?.banned || /token|autorizado|autenticado|login|sess[a�]o/i.test(String(result?.message || ''));
+            const shouldForceLogin = result?.banned || /token|autorizado|autenticado|login|sess[ae]o/i.test(String(result?.message || ''));
             if (shouldForceLogin) {
                 AuthAPI.removeToken();
-                window.location.href = 'login.html?message=' + encodeURIComponent(result?.message || 'Sess�o inv�lida. Fa�a login novamente.');
+                window.location.href = 'login.html?message=' + encodeURIComponent(result?.message || 'Sesseo invelida. Faea login novamente.');
                 return;
             }
             throw new Error(result.message || 'Failed to load profile');
@@ -521,23 +521,23 @@ async function loadProfile() {
         canOrderFixedRanks = Boolean(result?.user?.canOrderFixedRanks);
         console.log('[PROFILE] User loaded:', currentUser.firstName, currentUser.lastName);
 
-        // Renderizar dados do usu�rio
+        // Renderizar dados do usuerio
         console.log('[PROFILE] Calling renderProfileData...');
         await renderProfileData(result);
         
         console.log('[PROFILE] About to show profileContent...');
-        // Mostrar conte�do IMEDIATAMENTE
+        // Mostrar conteedo IMEDIATAMENTE
         document.getElementById('loadingScreen').style.display = 'none';
         document.getElementById('profileContent').style.display = 'block';
         
         console.log('[PROFILE] profileContent is now visible');
         
-        // Anexar event listeners DEPOIS que os dados s�o renderizados
+        // Anexar event listeners DEPOIS que os dados seo renderizados
         console.log('[PROFILE] Attaching event listeners...');
         attachEventListeners();
         
         // Carregar conquistas customizados SEM BLOQUEAR (fire and forget)
-        // Isso permite que o perfil carregue r�pido, depois os conquistas customiz�veis carregam em background
+        // Isso permite que o perfil carregue repido, depois os conquistas customizeveis carregam em background
         console.log('[PROFILE] Loading custom ranks (non-blocking)...');
         loadCustomRanks(currentUser.id).catch(err => {
             console.warn('[PROFILE] Custom ranks loading error (non-critical, ignored):', err.message);
@@ -561,7 +561,7 @@ async function renderProfileData(result) {
     try {
         currentRankComplete = result.rankComplete || null;
 
-        // Dados b�sicos
+        // Dados besicos
         document.getElementById('profileUsername').textContent = currentUser.nickname || (currentUser.firstName + ' ' + currentUser.lastName);
         
         // Email
@@ -578,11 +578,11 @@ async function renderProfileData(result) {
             verificationBadge.innerHTML = '<img src="/imagens/Verificado.png" alt="Verificado" style="width: 28px; height: 28px; cursor: pointer;" title="E-mail Verificado">';
             verificationBadge.className = 'verification-badge verified';
         } else {
-            verificationBadge.textContent = 'N�o Verificado';
+            verificationBadge.textContent = 'Neo Verificado';
             verificationBadge.className = 'verification-badge unverified';
         }
         
-        // Bio (se��o opcional)
+        // Bio (seeeo opcional)
         const profileBio = document.getElementById('profileBio');
         if (profileBio) {
             profileBio.textContent = currentUser.bio || 'Nenhuma bio configurada.';
@@ -608,12 +608,12 @@ async function renderProfileData(result) {
         }
         document.getElementById('rankDescription').textContent = getEffectiveProfileTagline();
 
-        // Renderizar conquistas autom�ticos (se existirem e forem diferentes do conquista principal)
+        // Renderizar conquistas autometicos (se existirem e forem diferentes do conquista principal)
         if (result.rankComplete && result.rankComplete.automatic) {
             const autoRank = result.rankComplete.automatic;
             const currentRank = result.rankComplete.current;
             
-            // Renderizar conquista autom�tico se ele for diferente do conquista principal
+            // Renderizar conquista autometico se ele for diferente do conquista principal
             if (autoRank && autoRank.name !== currentRank.name) {
                 const autoRanksContainer = document.getElementById('automaticRanksInline');
                 if (autoRanksContainer) {
@@ -642,12 +642,12 @@ async function renderProfileData(result) {
 
         syncAnimatedProfileButton();
 
-        // Inicializar currentCustomRanks como array vazio ANTES de renderizar hist�rico
+        // Inicializar currentCustomRanks como array vazio ANTES de renderizar histerico
         if (!currentCustomRanks) {
             currentCustomRanks = [];
         }
 
-        // Rank history (renderizar com conquistas customizados vazios no in�cio)
+        // Rank history (renderizar com conquistas customizados vazios no inecio)
         const history = result.rankHistory || [];
         const rankProgress = result.rankProgress || {};
         renderRankHistory(history, rankProgress);
@@ -675,17 +675,17 @@ function renderRankHistory(history, rankProgress = {}) {
     }
 
     const ALL_RANKS = [
-        { level: 1, name: 'Beta', minDays: 0, maxDays: 3, color: '#6B46C1', description: 'Bem-vindo! Voc� � um novo membro' },
-        { level: 2, name: 'Alpha', minDays: 3, maxDays: 7, color: '#EC4899', description: 'Voc� est� se adaptando � comunidade' },
-        { level: 3, name: 'Initiate', minDays: 7, maxDays: 15, color: '#3B82F6', description: 'Iniciado nos mist�rios da guild' },
+        { level: 1, name: 'Beta', minDays: 0, maxDays: 3, color: '#6B46C1', description: 'Bem-vindo! Voce e um novo membro' },
+        { level: 2, name: 'Alpha', minDays: 3, maxDays: 7, color: '#EC4899', description: 'Voce este se adaptando e comunidade' },
+        { level: 3, name: 'Initiate', minDays: 7, maxDays: 15, color: '#3B82F6', description: 'Iniciado nos misterios da guild' },
         { level: 4, name: 'Apprentice', minDays: 15, maxDays: 30, color: '#06B6D4', description: 'Aprendiz dedicado' },
-        { level: 5, name: 'Novice', minDays: 30, maxDays: 60, color: '#10B981', description: 'Novato em ascens�o' },
+        { level: 5, name: 'Novice', minDays: 30, maxDays: 60, color: '#10B981', description: 'Novato em ascenseo' },
         { level: 6, name: 'Adept', minDays: 60, maxDays: 90, color: '#8B5CF6', description: 'Mestre em aprendizado' },
         { level: 7, name: 'Expert', minDays: 90, maxDays: 120, color: '#F59E0B', description: 'Especialista da guild' },
         { level: 8, name: 'Master', minDays: 120, maxDays: 150, color: '#EF4444', description: 'Mestre guerreiro' },
         { level: 9, name: 'Grand Master', minDays: 150, maxDays: 180, color: '#DC2626', description: 'Grande Mestre' },
-        { level: 10, name: 'Legendary', minDays: 180, maxDays: 220, color: '#FFD700', description: 'Lend�rio' },
-        { level: 11, name: 'Mythic', minDays: 220, maxDays: 270, color: '#FF1493', description: 'Ser m�tico' },
+        { level: 10, name: 'Legendary', minDays: 180, maxDays: 220, color: '#FFD700', description: 'Lenderio' },
+        { level: 11, name: 'Mythic', minDays: 220, maxDays: 270, color: '#FF1493', description: 'Ser metico' },
         { level: 12, name: 'Transcendent', minDays: 270, maxDays: 310, color: '#00CED1', description: 'Transcendente' },
         { level: 13, name: 'Eternal', minDays: 310, maxDays: 360, color: '#FFB6C1', description: 'Membro eterno' },
         { level: 14, name: 'Immortal', minDays: 360, maxDays: 99999, color: '#FF69B4', description: 'Imortal da guild' }
@@ -700,7 +700,7 @@ function renderRankHistory(history, rankProgress = {}) {
     console.log('  currentUser.createdAt:', currentUser.createdAt);
     console.log('  userDays calculated:', userDays);
 
-    // conquistas autom�ticos
+    // conquistas autometicos
     const conquistasAutomaticas = ALL_RANKS.filter(rank => userDays >= rank.minDays && userDays < rank.maxDays);
     const conquistasPassadas = ALL_RANKS.filter(rank => userDays >= rank.maxDays);
     const disponiveis = ALL_RANKS.filter(rank => userDays < rank.minDays);
@@ -708,7 +708,7 @@ function renderRankHistory(history, rankProgress = {}) {
     console.log('  conquistasAutomaticas:', conquistasAutomaticas.map(r => r.name));
     console.log('  disponiveis:', disponiveis.map(r => r.name));
     
-    // Fun��o auxiliar para gerar URL da imagem
+    // Funeeo auxiliar para gerar URL da imagem
     function getImageUrl(rankName) {
         const baseFromApi = typeof API_URL === 'string'
             ? API_URL.replace(/\/api\/?$/i, '').replace(/\/+$/, '')
@@ -719,9 +719,9 @@ function renderRankHistory(history, rankProgress = {}) {
         return `${imageBase}/imagens/${rankName}.png`;
     }
 
-    // Fun��o auxiliar para renderizar card com imagem de fundo
+    // Funeeo auxiliar para renderizar card com imagem de fundo
     function renderCard(rank, isCustom = false, status = 'available', userDays = 0, isVisible = true) {
-        // status: 'available' = n�o conquistado, 'current' = conquista atual, 'created' = conta criada (Beta)
+        // status: 'available' = neo conquistado, 'current' = conquista atual, 'created' = conta criada (Beta)
         let imageStyle = '';
         let imageUrl = getImageUrl(rank.name);
         const rankIdNumber = Number(rank?.id);
@@ -735,14 +735,14 @@ function renderRankHistory(history, rankProgress = {}) {
 
         const cardStyle = `border-color: ${rank.color}; ${imageStyle} position: relative;`;
         
-        // Checkbox apenas para conquistas customizados que t�m isVisible = true
+        // Checkbox apenas para conquistas customizados que tem isVisible = true
         let checkbox = '';
         if (isCustom && isVisible) {
             checkbox = `<input type="checkbox" class="rank-checkbox" data-rank-id="${rank.id}" data-rank-group="${rank.rankGroup || ''}" ${isSelectedForDisplay ? 'checked' : ''} style="position: absolute; top: 8px; right: 8px; z-index: 3; width: 20px; height: 20px; cursor: pointer;">`;
         }
 
         if (status === 'available') {
-            // conquista ainda n�o conquistado (Progress�o) - SEM BARRA
+            // conquista ainda neo conquistado (Progresseo) - SEM BARRA
             return `
                 <div class="rank-card" style="${cardStyle}" data-rank-id="${rank.id || ''}" data-rank-name="${rank.name}">
                     <div class="rank-card-name" style="color: ${rank.color}; font-weight: 700; text-shadow: 0 0 10px rgba(0,0,0,0.8), 0 0 5px rgba(0,0,0,0.8); background: rgba(0,0,0,0.4); padding: 4px 8px; border-radius: 4px; display: inline-block;">${rank.name}</div>
@@ -761,7 +761,7 @@ function renderRankHistory(history, rankProgress = {}) {
                 </div>
             `;
         } else if (status === 'completed') {
-            // conquista j� conquistado
+            // conquista je conquistado
             return `
                 <div class="rank-card" style="${cardStyle}" data-rank-id="${rank.id || ''}" data-rank-name="${rank.name}">
                     <div class="rank-card-name" style="color: white; font-weight: 700; text-shadow: 0 0 10px rgba(0,0,0,0.9), 0 0 5px rgba(0,0,0,0.9); background: rgba(0,0,0,0.5); padding: 6px 10px; border-radius: 4px; display: inline-block; position: relative; z-index: 2;">${rank.name}</div>
@@ -783,7 +783,7 @@ function renderRankHistory(history, rankProgress = {}) {
                     </div>
                 `;
             } else {
-                // conquista autom�tico (como Alpha, Initiate) - COM BARRA
+                // conquista autometico (como Alpha, Initiate) - COM BARRA
                 const daysProgress = userDays - rank.minDays;
                 const totalDays = rank.maxDays - rank.minDays;
                 const progressPercent = Math.max(0, Math.min(100, (daysProgress / totalDays) * 100));
@@ -805,7 +805,7 @@ function renderRankHistory(history, rankProgress = {}) {
 
     // CONQUISTAS: Mostrar conquista automatico atual + conquista fixo/manual + conquistas customizados
     const betaRank = ALL_RANKS.find(r => r.name === 'Beta');
-    const eloAtual = conquistasAutomaticas[0]; // Pega o conquista em que o usu�rio est�
+    const eloAtual = conquistasAutomaticas[0]; // Pega o conquista em que o usuerio este
     const manualRank = currentRankComplete && currentRankComplete.custom ? currentRankComplete.custom : null;
     
     console.log('DEBUG CONQUISTAS:');
@@ -871,14 +871,14 @@ function renderRankHistory(history, rankProgress = {}) {
 
     const conquistasSectionHTML = `
         <div style="padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(236, 72, 153, 0.35); background: rgba(236, 72, 153, 0.08); color: #F9A8D4; font-size: 12px; font-weight: 600; margin-bottom: 16px;">
-            Voc� s� pode escolher um conquista de cada conquista (Postagens/Likes). conquistas personalizados s�o independentes.
+            Voce se pode escolher um conquista de cada conquista (Postagens/Likes). conquistas personalizados seo independentes.
         </div>
-        ${renderMeusElosSection('conquistas Fixos e Personalizados', '#EC4899', sortedFixedAndCustom, 'Nenhum conquista dispon�vel nesta se��o.')}
-        ${renderMeusElosSection('conquistas de Postagens', '#C084FC', postAchievementCurrentRanks, 'Voc� ainda n�o desbloqueou conquistas de postagens.')}
-        ${renderMeusElosSection('conquistas de Likes', '#38BDF8', likeAchievementCurrentRanks, 'Voc� ainda n�o desbloqueou conquistas de likes.')}
+        ${renderMeusElosSection('conquistas Fixos e Personalizados', '#EC4899', sortedFixedAndCustom, 'Nenhum conquista disponevel nesta seeeo.')}
+        ${renderMeusElosSection('conquistas de Postagens', '#C084FC', postAchievementCurrentRanks, 'Voce ainda neo desbloqueou conquistas de postagens.')}
+        ${renderMeusElosSection('conquistas de Likes', '#38BDF8', likeAchievementCurrentRanks, 'Voce ainda neo desbloqueou conquistas de likes.')}
     `;
 
-    // PROGRESS�O: Mostrar Beta + conquistas passados + conquista atual + conquistas n�o conquistados
+    // PROGRESSeO: Mostrar Beta + conquistas passados + conquista atual + conquistas neo conquistados
     const progressaoRanks = Array.from(
         new Map(
             [betaRank, ...conquistasPassadas.filter(rank => rank.name !== 'Beta'), eloAtual, ...disponiveis]
@@ -971,7 +971,7 @@ function renderRankHistory(history, rankProgress = {}) {
             
             <div class="ranks-tab-buttons" style="display: flex; gap: 20px; border-bottom: 2px solid rgba(107, 70, 193, 0.2); padding-bottom: 15px; margin-bottom: 15px;">
                 <button class="ranks-tab-btn active" data-tab="conquistas" style="background: none; border: none; color: #6B46C1; font-size: 15px; font-weight: 600; cursor: pointer; border-bottom: 3px solid #6B46C1; padding: 5px 15px;">Minhas conquistas</button>
-                <button class="ranks-tab-btn" data-tab="disponiveis" style="background: none; border: none; color: rgba(255, 255, 255, 0.6); font-size: 15px; font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; padding: 5px 15px;">Progress�o</button>
+                <button class="ranks-tab-btn" data-tab="disponiveis" style="background: none; border: none; color: rgba(255, 255, 255, 0.6); font-size: 15px; font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; padding: 5px 15px;">Progresseo</button>
                     </div>
             
             <div class="ranks-tab-content active" id="tab-conquistas" style="display: block;">
@@ -1039,12 +1039,12 @@ async function loadCustomRanks(userId) {
         const elosResult = await AuthAPI.getUserCustomRanks(userId);
         console.log('API Response:', elosResult);
         
-        // Guardar os conquistas customizados na vari�vel global
+        // Guardar os conquistas customizados na varievel global
         currentCustomRanks = elosResult.success && elosResult.ranks ? elosResult.ranks : [];
         console.log('Custom ranks loaded from API:', currentCustomRanks.length);
         console.log('Custom ranks details:', currentCustomRanks.map(r => ({ id: r.id, name: r.name, isVisible: r.isVisible })));
         
-        // Carregar conquistas selecionados para exibi��o ANTES de marcar checkboxes
+        // Carregar conquistas selecionados para exibieeo ANTES de marcar checkboxes
         const selectedResult = await AuthAPI.getSelectedProfileRanks();
         console.log('Selected ranks result:', selectedResult);
         canOrderFixedRanks = Boolean(selectedResult?.canOrderFixedRanks || canOrderFixedRanks);
@@ -1067,7 +1067,7 @@ async function loadCustomRanks(userId) {
         addCheckboxEventListeners();
         console.log('Checkbox event listeners added');
         
-        // Chamar loadSelectedRanksDisplay novamente para renderizar a se��o de conquistas
+        // Chamar loadSelectedRanksDisplay novamente para renderizar a seeeo de conquistas
         await loadSelectedRanksDisplay();
         console.log('Selected ranks display loaded');
     } catch (err) {
@@ -1077,7 +1077,7 @@ async function loadCustomRanks(userId) {
 }
 
 function addCheckboxEventListeners() {
-    // Adicionar event listeners aos checkboxes dos conquistas customiz�veis
+    // Adicionar event listeners aos checkboxes dos conquistas customizeveis
     document.querySelectorAll('.rank-checkbox').forEach(checkbox => {
         // Remover listeners antigos
         checkbox.replaceWith(checkbox.cloneNode(true));
@@ -1110,7 +1110,7 @@ function addCheckboxEventListeners() {
                         }
                     });
                     if (replaced) {
-                        showNotification('Voc� s� pode escolher um conquista de cada conquista. O anterior foi substitu�do.', 'success');
+                        showNotification('Voce se pode escolher um conquista de cada conquista. O anterior foi substituedo.', 'success');
                     }
                 }
             }
@@ -1119,7 +1119,7 @@ function addCheckboxEventListeners() {
             
             if (selectedCheckboxes.length > MAX_SELECTED_PROFILE_RANKS) {
                 e.target.checked = false;
-                showNotification(`M�ximo de ${MAX_SELECTED_PROFILE_RANKS} conquistas selecionados`, 'error');
+                showNotification(`Meximo de ${MAX_SELECTED_PROFILE_RANKS} conquistas selecionados`, 'error');
                 return;
             }
             
@@ -1132,10 +1132,10 @@ function addCheckboxEventListeners() {
                 selectedProfileRankIds = [...selectedIds];
                 renderRankHistory([]);
                 addCheckboxEventListeners();
-                showNotification('conquistas selecionados para exibi��o!', 'success');
+                showNotification('conquistas selecionados para exibieeo!', 'success');
                 await loadSelectedRanksDisplay();
             } else {
-                showNotification('Erro ao salvar sele��o', 'error');
+                showNotification('Erro ao salvar seleeeo', 'error');
                 e.target.checked = !e.target.checked;
             }
         });
@@ -1291,7 +1291,7 @@ async function loadSelectedRanksDisplay() {
             }
         });
 
-        // Fallback de seguran�a: remove duplicatas por chave e, para fixos, por nome.
+        // Fallback de seguranea: remove duplicatas por chave e, para fixos, por nome.
         const dedupedRanks = [];
         const seenKeys = new Set();
         const seenFixedNames = new Set();
@@ -1314,7 +1314,7 @@ async function loadSelectedRanksDisplay() {
                 return 0;
             });
         } else if (selectedKeysOrdered.length > 0) {
-            // Com permiss�o para ordenar fixos, respeitar estritamente a ordem salva.
+            // Com permisseo para ordenar fixos, respeitar estritamente a ordem salva.
             const positionById = new Map(selectedKeysOrdered.map((id, index) => [id, index]));
             orderedSelectedRanks.sort((a, b) => {
                 const aId = getRankOrderKeyFromRank(a);
@@ -1383,7 +1383,7 @@ async function loadSelectedRanksDisplay() {
                 const isFixed = fixedIds.has(rankKey);
                 const canMove = canOrderFixedRanks || !isFixed;
                 const showDragHandle = isRankOrderMode && shouldShowOrderButton && canMove;
-                const lockTitle = isRankOrderMode && !canMove ? 'Conquista fixo n�o pode ser movido' : '';
+                const lockTitle = isRankOrderMode && !canMove ? 'Conquista fixo neo pode ser movido' : '';
 
                 return `
                 <div class="selected-conquista-badge" data-rank-id="${rankId}" data-fixed="${isFixed ? '1' : '0'}" title="${lockTitle}" style="
@@ -1439,7 +1439,7 @@ function attachEventListeners() {
         const editBtn = document.getElementById('editBtn');
         if (editBtn) {
             editBtn.addEventListener('click', () => {
-                // Preencher campos com dados do usu�rio
+                // Preencher campos com dados do usuerio
                 if (currentUser) {
                     document.getElementById('editFirstName').value = currentUser.firstName || '';
                     document.getElementById('editLastName').value = currentUser.lastName || '';
@@ -1451,7 +1451,7 @@ function attachEventListeners() {
                     // Atualizar o email no aviso do nickname
                     const nicknameWarning = document.querySelector('.nickname-warning em');
                     if (nicknameWarning) {
-                        nicknameWarning.innerHTML = `Voc� tamb�m pode fazer login com seu email: <strong>${currentUser.email}</strong>`;
+                        nicknameWarning.innerHTML = `Voce tambem pode fazer login com seu email: <strong>${currentUser.email}</strong>`;
                     }
                     
                     updateTaglineCount();
@@ -1589,7 +1589,7 @@ function attachEventListeners() {
                     return;
                 }
                 if (file.size > MAX_CUSTOM_ANIMATED_GIF_BYTES) {
-                    showNotification('GIF muito grande. M�ximo: 500KB.', 'error');
+                    showNotification('GIF muito grande. Meximo: 500KB.', 'error');
                     return;
                 }
                 if (String(file.type || '').toLowerCase() !== 'image/gif') {
@@ -1644,7 +1644,7 @@ function attachEventListeners() {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
                 
-                // Adiciona active no bot�o e conte�do clicado
+                // Adiciona active no boteo e conteedo clicado
                 btn.classList.add('active');
                 document.getElementById(tabName).classList.add('active');
 
@@ -1691,18 +1691,18 @@ function attachEventListeners() {
                     const result = await AuthAPI.sendEmailChangeCode(currentUser.email);
                     
                     if (result.success) {
-                        showNotification('C�digo enviado para seu email! Verifique sua caixa de entrada.', 'success');
-                        sendEmailCodeBtn.textContent = 'C�digo Enviado';
+                        showNotification('Cedigo enviado para seu email! Verifique sua caixa de entrada.', 'success');
+                        sendEmailCodeBtn.textContent = 'Cedigo Enviado';
                         document.getElementById('changeEmailError').textContent = '';
                     } else {
-                        document.getElementById('changeEmailError').textContent = 'Erro: ' + (result.message || 'Erro ao enviar c�digo');
+                        document.getElementById('changeEmailError').textContent = 'Erro: ' + (result.message || 'Erro ao enviar cedigo');
                         sendEmailCodeBtn.disabled = false;
-                        sendEmailCodeBtn.textContent = 'Enviar C�digo';
+                        sendEmailCodeBtn.textContent = 'Enviar Cedigo';
                     }
                 } catch (err) {
-                    document.getElementById('changeEmailError').textContent = 'Erro ao enviar c�digo';
+                    document.getElementById('changeEmailError').textContent = 'Erro ao enviar cedigo';
                     sendEmailCodeBtn.disabled = false;
-                    sendEmailCodeBtn.textContent = 'Enviar C�digo';
+                    sendEmailCodeBtn.textContent = 'Enviar Cedigo';
                     console.error(err);
                 }
             });
@@ -1726,7 +1726,7 @@ function attachEventListeners() {
                     const result = await AuthAPI.changeEmail(newEmail, code);
                     
                     if (result.success) {
-                        // Atualizar email do usu�rio
+                        // Atualizar email do usuerio
                         currentUser.email = newEmail;
                         document.getElementById('editEmail').value = newEmail;
                         document.getElementById('profileEmail').textContent = '*'.repeat(newEmail.length);
@@ -1753,7 +1753,7 @@ function attachEventListeners() {
             editProfileForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 
-                // Coletar todos os dados do formul�rio (SEM email)
+                // Coletar todos os dados do formulerio (SEM email)
                 const formData = new FormData();
                 formData.append('firstName', document.getElementById('editFirstName').value);
                 formData.append('lastName', document.getElementById('editLastName').value);
@@ -1765,7 +1765,7 @@ function attachEventListeners() {
                 try {
                     const result = await AuthAPI.updateProfile(formData);
                     if (result.success) {
-                        // Atualizar dados no usu�rio atual
+                        // Atualizar dados no usuerio atual
                         currentUser.firstName = result.user.firstName;
                         currentUser.lastName = result.user.lastName;
                         currentUser.nickname = result.user.nickname;
@@ -1773,17 +1773,17 @@ function attachEventListeners() {
                         currentUser.birthDate = result.user.birthDate;
                         currentUser.profileTagline = String(result.user.profileTagline || '').trim();
                         
-                        // Atualizar o perfil na p�gina
+                        // Atualizar o perfil na pegina
                         document.getElementById('profileUsername').textContent = `${result.user.firstName} ${result.user.lastName}`;
                         document.getElementById('rankDescription').textContent = getEffectiveProfileTagline();
                         
-                        // Reconex�o ao email mascarado
+                        // Reconexeo ao email mascarado
                         const emailDisplay = document.getElementById('profileEmail');
                         emailDisplay.textContent = '*'.repeat(result.user.email.length);
                         emailDisplay.setAttribute('data-hidden', 'true');
                         syncEmailToggleButton();
                         
-                        // Fechar modal e mostrar notifica��o
+                        // Fechar modal e mostrar notificaeeo
                         document.getElementById('editModal').style.display = 'none';
                         document.getElementById('editError').textContent = '';
                         showNotification('Perfil atualizado com sucesso!', 'success');
@@ -1815,16 +1815,16 @@ function attachEventListeners() {
         const editNickname = document.getElementById('editNickname');
         if (editNickname) {
             editNickname.addEventListener('focus', () => {
-                // Verificar se j� existe o aviso
+                // Verificar se je existe o aviso
                 let warning = document.getElementById('nicknameWarning');
                 if (!warning) {
                     warning = document.createElement('div');
                     warning.id = 'nicknameWarning';
                     warning.className = 'nickname-warning';
                     warning.innerHTML = `
-                        <strong>Aten��o:</strong>
-                        Se alterar seu nickname, o seu login mudar� para o novo nickname.<br>
-                        <em>Voc� tamb�m pode fazer login com seu email: ${currentUser.email}</em>
+                        <strong>Ateneeo:</strong>
+                        Se alterar seu nickname, o seu login mudare para o novo nickname.<br>
+                        <em>Voce tambem pode fazer login com seu email: ${currentUser.email}</em>
                     `;
                     editNickname.parentElement.appendChild(warning);
                 }
@@ -2006,7 +2006,7 @@ async function checkAdminPanelAccess() {
         
         if (result && result.success && result.hasAccess) {
             console.log('[PROFILE] User has admin access! Showing button...');
-            // Mostrar bot�o de painel admin que j� existe no HTML
+            // Mostrar boteo de painel admin que je existe no HTML
             const adminBtn = document.getElementById('adminBtn');
             
             if (adminBtn) {
@@ -2274,7 +2274,7 @@ async function searchAnimatedGifs({ append = false, useTrending = false } = {}) 
             : await AuthAPI.searchAnimatedGifs(query, 18, append ? animatedGifSearchNextPos : '');
 
         if (!result?.success) {
-            showNotification(result?.message || 'N�o foi poss�vel buscar GIFs agora.', 'error');
+            showNotification(result?.message || 'Neo foi possevel buscar GIFs agora.', 'error');
             return;
         }
 
@@ -2301,7 +2301,7 @@ function syncAnimatedProfileButton() {
 
 async function openAnimatedProfileModal() {
     if (!userCanUseAnimatedProfile()) {
-        showNotification('Voc� n�o tem permiss�o para usar Perfil Animado.', 'error');
+        showNotification('Voce neo tem permisseo para usar Perfil Animado.', 'error');
         return;
     }
 
@@ -2351,8 +2351,8 @@ async function openAnimatedProfileModal() {
             errorEl.textContent = result.message;
         }
     } catch (error) {
-        console.error('Erro ao carregar configura��o de Perfil Animado:', error);
-        if (errorEl) errorEl.textContent = 'N�o foi poss�vel carregar as configura��es.';
+        console.error('Erro ao carregar configuraeeo de Perfil Animado:', error);
+        if (errorEl) errorEl.textContent = 'Neo foi possevel carregar as configuraeees.';
     } finally {
         miniEnabledToggle.checked = miniEnabled;
         downloadEnabledToggle.checked = downloadEnabled;
@@ -2381,7 +2381,7 @@ async function openAnimatedProfileModal() {
 
 async function saveAnimatedProfileSettings() {
     if (!userCanUseAnimatedProfile()) {
-        showNotification('Voc� n�o tem permiss�o para usar Perfil Animado.', 'error');
+        showNotification('Voce neo tem permisseo para usar Perfil Animado.', 'error');
         return;
     }
 
@@ -2438,10 +2438,10 @@ async function saveAnimatedProfileSettings() {
             if (modal) modal.style.display = 'none';
             return;
         }
-        if (errorEl) errorEl.textContent = result?.message || 'N�o foi poss�vel salvar as configura��es.';
+        if (errorEl) errorEl.textContent = result?.message || 'Neo foi possevel salvar as configuraeees.';
     } catch (error) {
-        console.error('Erro ao salvar configura��o de Perfil Animado:', error);
-        if (errorEl) errorEl.textContent = 'Erro ao salvar configura��o.';
+        console.error('Erro ao salvar configuraeeo de Perfil Animado:', error);
+        if (errorEl) errorEl.textContent = 'Erro ao salvar configuraeeo.';
     } finally {
         saveBtn.disabled = false;
         saveBtn.textContent = originalBtnText;
@@ -2531,11 +2531,11 @@ async function renderTwoFactorQr() {
     resetTwoFactorMessages();
     if (!els.qrWrap || !els.qrImage) return;
 
-    // Fallback quando a lib externa � bloqueada pelo navegador/AdBlock.
+    // Fallback quando a lib externa e bloqueada pelo navegador/AdBlock.
     if (!window.QRCode || typeof window.QRCode.toDataURL !== 'function') {
         const fallbackUrl = `https://quickchart.io/qr?size=220&text=${encodeURIComponent(uri)}`;
         els.qrImage.onerror = () => {
-            setTwoFactorError('N�o foi poss�vel carregar o QR. Tente novamente ou use o login por e-mail.');
+            setTwoFactorError('Neo foi possevel carregar o QR. Tente novamente ou use o login por e-mail.');
         };
         els.qrImage.src = fallbackUrl;
         els.qrWrap.style.display = 'flex';
@@ -2555,7 +2555,7 @@ async function renderTwoFactorQr() {
         els.qrWrap.style.display = 'flex';
     } catch (error) {
         console.error('Erro ao gerar QR do 2FA:', error);
-        setTwoFactorError('N�o foi poss�vel gerar o QR Code. Tente novamente em alguns segundos.');
+        setTwoFactorError('Neo foi possevel gerar o QR Code. Tente novamente em alguns segundos.');
     }
 }
 
@@ -2637,7 +2637,7 @@ async function saveTwoFactorSettings() {
     const els = getTwoFactorElements();
     const rememberDays = Number(els.rememberDaysSelect?.value || 3);
     if (!Number.isFinite(rememberDays)) {
-        setTwoFactorError('Escolha um prazo v�lido.');
+        setTwoFactorError('Escolha um prazo velido.');
         return;
     }
 
@@ -2649,13 +2649,13 @@ async function saveTwoFactorSettings() {
             }
             const selectedValue = Number(result?.rememberDays ?? rememberDays);
             if (selectedValue === 0) {
-                showNotification('2FA configurado para solicitar c�digo em todo login.', 'success');
+                showNotification('2FA configurado para solicitar cedigo em todo login.', 'success');
             } else {
-                showNotification(`2FA configurado para pedir novo c�digo a cada ${selectedValue} dia(s).`, 'success');
+                showNotification(`2FA configurado para pedir novo cedigo a cada ${selectedValue} dia(s).`, 'success');
             }
             return;
         }
-        setTwoFactorError(result?.message || 'N�o foi poss�vel salvar o prazo do 2FA.');
+        setTwoFactorError(result?.message || 'Neo foi possevel salvar o prazo do 2FA.');
     } catch (error) {
         console.error('Erro ao salvar prazo do 2FA:', error);
         setTwoFactorError('Erro ao salvar prazo do 2FA.');
@@ -2678,7 +2678,7 @@ async function setupTwoFactor() {
     try {
         const result = await AuthAPI.setupTwoFactor();
         if (!result?.success) {
-            setTwoFactorError(result?.message || 'Erro ao iniciar configura��o do 2FA');
+            setTwoFactorError(result?.message || 'Erro ao iniciar configuraeeo do 2FA');
             return;
         }
 
@@ -2697,7 +2697,7 @@ async function setupTwoFactor() {
         }
     } catch (error) {
         console.error('Erro ao configurar 2FA:', error);
-        setTwoFactorError('Erro ao iniciar configura��o do 2FA');
+        setTwoFactorError('Erro ao iniciar configuraeeo do 2FA');
     }
 }
 
@@ -2706,7 +2706,7 @@ async function enableTwoFactor() {
     const els = getTwoFactorElements();
     const code = String(els.enableCodeInput?.value || '').replace(/\s+/g, '').trim();
     if (!/^\d{6}$/.test(code)) {
-        setTwoFactorError('Digite o c�digo de 6 d�gitos do Authenticator.');
+        setTwoFactorError('Digite o cedigo de 6 degitos do Authenticator.');
         return;
     }
 
@@ -2722,7 +2722,7 @@ async function enableTwoFactor() {
             await loadTwoFactorStatus();
             return;
         }
-        setTwoFactorError(result?.message || 'N�o foi poss�vel ativar o 2FA.');
+        setTwoFactorError(result?.message || 'Neo foi possevel ativar o 2FA.');
     } catch (error) {
         console.error('Erro ao ativar 2FA:', error);
         setTwoFactorError('Erro ao ativar 2FA.');
@@ -2734,7 +2734,7 @@ async function disableTwoFactor() {
     const els = getTwoFactorElements();
     const code = String(els.disableCodeInput?.value || '').replace(/\s+/g, '').trim();
     if (!/^\d{6}$/.test(code)) {
-        setTwoFactorError('Digite um c�digo v�lido de 6 d�gitos para desativar.');
+        setTwoFactorError('Digite um cedigo velido de 6 degitos para desativar.');
         return;
     }
 
@@ -2749,7 +2749,7 @@ async function disableTwoFactor() {
             await loadTwoFactorStatus();
             return;
         }
-        setTwoFactorError(result?.message || 'N�o foi poss�vel desativar o 2FA.');
+        setTwoFactorError(result?.message || 'Neo foi possevel desativar o 2FA.');
     } catch (error) {
         console.error('Erro ao desativar 2FA:', error);
         setTwoFactorError('Erro ao desativar 2FA.');
@@ -2894,13 +2894,13 @@ async function saveNotificationSettings() {
         const result = await AuthAPI.updateNotificationSettings(payload);
         if (result?.success) {
             applyNotificationSettingsToUI(result.settings || payload);
-            showNotification('Configura��es de notifica��es salvas', 'success');
+            showNotification('Configuraeees de notificaeees salvas', 'success');
         } else {
-            showNotification(result?.message || 'Erro ao salvar notifica��es', 'error');
+            showNotification(result?.message || 'Erro ao salvar notificaeees', 'error');
         }
     } catch (error) {
-        console.error('Erro ao salvar configura��es de notifica��es:', error);
-        showNotification('Erro ao salvar notifica��es', 'error');
+        console.error('Erro ao salvar configuraeees de notificaeees:', error);
+        showNotification('Erro ao salvar notificaeees', 'error');
     } finally {
         isSavingNotificationSettings = false;
     }
@@ -2920,7 +2920,7 @@ async function loadNotificationSettings() {
             });
         }
     } catch (error) {
-        console.error('Erro ao carregar configura��es de notifica��es:', error);
+        console.error('Erro ao carregar configuraeees de notificaeees:', error);
     }
 }
 
@@ -2985,7 +2985,7 @@ function renderModalConquestRanks(ranks) {
     if (!container) return;
 
     if (!Array.isArray(ranks) || ranks.length === 0) {
-        container.innerHTML = '<p style="margin: 0; color: rgba(255,255,255,0.55);">Nenhum conquista selecionado para exibi��o.</p>';
+        container.innerHTML = '<p style="margin: 0; color: rgba(255,255,255,0.55);">Nenhum conquista selecionado para exibieeo.</p>';
         return;
     }
 
@@ -3066,7 +3066,7 @@ async function loadPostageAchievements() {
             currentUserPostCount = totalPosts;
             currentUserLikeCount = totalLikesHistorical;
 
-            // Preencher estat�sticas
+            // Preencher estatesticas
             document.getElementById('totalPostages').textContent = totalPosts;
             document.getElementById('totalLikesReceived').textContent = totalLikesHistorical;
             document.getElementById('totalHeartsReceived').textContent = totalHearts;
@@ -3079,7 +3079,7 @@ async function loadPostageAchievements() {
             const currentRank = rankInfo.currentRank;
             document.getElementById('currentRankIcon').textContent = currentRank?.icon || '??';
             document.getElementById('currentRankName').textContent = currentRank?.name || 'Sem conquista';
-            document.getElementById('currentRankDesc').textContent = currentRank?.description || 'Fa�a sua primeira postagem';
+            document.getElementById('currentRankDesc').textContent = currentRank?.description || 'Faea sua primeira postagem';
 
             // Progresso
             const progress = rankInfo.progress;
@@ -3087,13 +3087,13 @@ async function loadPostageAchievements() {
             document.getElementById('progressNeeded').textContent = progress.needed;
             document.getElementById('progressBar').style.width = progress.percentage + '%';
 
-            // Pr�ximo conquista
+            // Preximo conquista
             const nextPostageRankHint = document.getElementById('nextPostageRankHint');
             if (rankInfo.nextRank) {
                 const nextRank = rankInfo.nextRank;
                 nextPostageRankHint.textContent = `${nextRank.postagensNeeded} postagens faltam para ${nextRank.name}`;
             } else {
-                nextPostageRankHint.textContent = 'Voc� j� alcan�ou o maior conquista de postagens.';
+                nextPostageRankHint.textContent = 'Voce je alcaneou o maior conquista de postagens.';
             }
 
             if (ranksResponse.success) {
@@ -3122,7 +3122,7 @@ async function loadPostageAchievements() {
                 const remainingLikes = Math.max(0, likeNext.minLikes - totalLikesHistorical);
                 document.getElementById('nextLikeRankHint').textContent = `${remainingLikes} likes faltam para ${likeNext.name}.`;
             } else {
-                document.getElementById('nextLikeRankHint').textContent = 'Voc� j� alcan�ou o maior conquista de likes.';
+                document.getElementById('nextLikeRankHint').textContent = 'Voce je alcaneou o maior conquista de likes.';
             }
 
             document.getElementById('likeProgressCurrent').textContent = totalLikesHistorical;
@@ -3162,7 +3162,7 @@ async function loadMyPostages() {
             if (downloads.length === 0) {
                 container.innerHTML = `
                     <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #999;">
-                        <p style="font-size: 18px; margin: 0;">Voc� ainda n�o postou nada</p>
+                        <p style="font-size: 18px; margin: 0;">Voce ainda neo postou nada</p>
                         <p style="margin: 10px 0 0 0;">Compartilhe seus programas com a comunidade!</p>
                     </div>
                 `;
@@ -3176,7 +3176,7 @@ async function loadMyPostages() {
                     
                     <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; font-size: 11px; font-weight: 600;">
                         <span style="padding: 4px 8px; border-radius: 999px; border: 1px solid rgba(236, 72, 153, 0.45); color: #EC4899; background: rgba(236, 72, 153, 0.12);">Likes ${download.likes || 0}</span>
-                        <span style="padding: 4px 8px; border-radius: 999px; border: 1px solid rgba(192, 132, 252, 0.45); color: #C084FC; background: rgba(192, 132, 252, 0.12);">Cora��es ${download.hearts || 0}</span>
+                        <span style="padding: 4px 8px; border-radius: 999px; border: 1px solid rgba(192, 132, 252, 0.45); color: #C084FC; background: rgba(192, 132, 252, 0.12);">Coraeees ${download.hearts || 0}</span>
                         <span style="padding: 4px 8px; border-radius: 999px; border: 1px solid rgba(56, 189, 248, 0.45); color: #38BDF8; background: rgba(56, 189, 248, 0.12);">${new Date(download.createdAt).toLocaleDateString('pt-BR')}</span>
                     </div>
                     
@@ -3227,7 +3227,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (tab) {
                 tab.classList.add('active');
                 
-                // Carregar dados espec�ficos
+                // Carregar dados especeficos
                 if (tabName === 'conquistas-tab') {
                     await loadPostageAchievements();
                 } else if (tabName === 'postages-tab') {

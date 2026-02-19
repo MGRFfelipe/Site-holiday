@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -82,7 +82,7 @@
 <body>
     <div class="container">
         <h1>?? Login Debug Test</h1>
-        <p>Este � um teste interativo para debugar o login</p>
+        <p>Este e um teste interativo para debugar o login</p>
         
         <label>Nickname/Email:</label>
         <input type="text" id="testNickname" placeholder="Ex: fael" value="fael">
@@ -135,8 +135,8 @@
                     });
                     return await response.json();
                 } catch (error) {
-                    addLog('Erro na requisi��o de login: ' + error.message, 'error');
-                    return { success: false, message: 'Erro de conex�o' };
+                    addLog('Erro na requisieeo de login: ' + error.message, 'error');
+                    return { success: false, message: 'Erro de conexeo' };
                 }
             }
 
@@ -149,7 +149,7 @@
                     return await response.json();
                 } catch (error) {
                     addLog('Erro ao buscar perfil: ' + error.message, 'error');
-                    return { success: false, message: 'Erro de conex�o' };
+                    return { success: false, message: 'Erro de conexeo' };
                 }
             }
         }
@@ -187,7 +187,7 @@
             if (result.success) {
                 addLog('? Login bem-sucedido!', 'success');
                 addLog(`Token: ${result.token.substring(0, 30)}...`, 'success');
-                addLog(`Usu�rio: ${result.user.firstName} ${result.user.lastName}`, 'success');
+                addLog(`Usuerio: ${result.user.firstName} ${result.user.lastName}`, 'success');
                 AuthAPI.setToken(result.token);
                 addLog('Token armazenado no localStorage', 'success');
             } else {
@@ -220,7 +220,7 @@
         }
 
         // Log initial state
-        addLog('P�gina pronta para testes', 'success');
+        addLog('Pegina pronta para testes', 'success');
         addLog(`API URL: ${API_URL}`, 'info');
     </script>
 </body>

@@ -467,14 +467,14 @@ class NavbarManager {
 
 class RouteGuard {
     static redirectToLogin(message) {
-        const loginMessage = String(message || 'Fa�a login para continuar');
+        const loginMessage = String(message || 'Faea login para continuar');
         window.location.href = `login.html?message=${encodeURIComponent(loginMessage)}`;
     }
 
     static async requireAuth(options = {}) {
         const {
-            loginMessage = 'Fa�a login para acessar esta p�gina',
-            invalidSessionMessage = 'Sess�o inv�lida. Fa�a login novamente.',
+            loginMessage = 'Faea login para acessar esta pegina',
+            invalidSessionMessage = 'Sesseo invelida. Faea login novamente.',
             validateSession = true
         } = options;
 

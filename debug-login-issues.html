@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -86,7 +86,7 @@
         
         <section>
             <h2>1. Teste do Toggle de Senha</h2>
-            <label>Digite algo e clique no bot�o ? para alternar:</label>
+            <label>Digite algo e clique no boteo ? para alternar:</label>
             <div class="toggle-demo">
                 <input type="password" id="testPassword" value="test123">
                 <button id="testToggle" type="button">?</button>
@@ -105,7 +105,7 @@
         <section>
             <h2>3. Teste de Redirecionamento</h2>
             <button onclick="testRedirect()">Fazer login E redirecionar</button>
-            <p style="color: #FFD700;">?? Aviso: Este bot�o ir� redirecionar para profile.html!</p>
+            <p style="color: #FFD700;">?? Aviso: Este boteo ire redirecionar para profile.html!</p>
             <div id="redirectLog" style="margin-top: 10px;"></div>
         </section>
     </div>
@@ -137,11 +137,11 @@
             addLog(log, `Tentando login com: ${nickname} / ***`, 'info');
             
             if (!AuthAPI) {
-                addLog(log, 'ERRO: AuthAPI n�o est� dispon�vel!', 'error');
+                addLog(log, 'ERRO: AuthAPI neo este disponevel!', 'error');
                 return;
             }
             
-            addLog(log, 'AuthAPI dispon�vel ?', 'success');
+            addLog(log, 'AuthAPI disponevel ?', 'success');
             
             try {
                 const result = await AuthAPI.login(nickname, password);
@@ -156,7 +156,7 @@
                     addLog(log, `? Erro: ${result.message}`, 'error');
                 }
             } catch (e) {
-                addLog(log, `? Exce��o: ${e.message}`, 'error');
+                addLog(log, `? Exceeeo: ${e.message}`, 'error');
             }
         }
 
@@ -200,7 +200,7 @@
 
         // Log inicial
         const initLog = document.getElementById('loginLog');
-        addLog(initLog, `AuthAPI dispon�vel? ${typeof AuthAPI !== 'undefined'}`, 'success');
+        addLog(initLog, `AuthAPI disponevel? ${typeof AuthAPI !== 'undefined'}`, 'success');
     </script>
 </body>
 </html>

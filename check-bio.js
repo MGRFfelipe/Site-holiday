@@ -1,4 +1,4 @@
-import sqlite3 from 'sqlite3';
+﻿import sqlite3 from 'sqlite3';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -11,14 +11,14 @@ db.get(`SELECT id, nickname, bio FROM users WHERE nickname = 'fael'`, (err, row)
     if (err) {
         console.error('Erro:', err);
     } else if (row) {
-        console.log('\nBio do usu�rio fael:');
+        console.log('\nBio do usuerio fael:');
         console.log('Valor:', row.bio);
         console.log('Tipo:', typeof row.bio);
         console.log('Tamanho:', row.bio ? row.bio.length : 0);
         
         if (row.bio && row.bio.includes('[object Object]')) {
-            console.log('\n?? PROBLEMA ENCONTRADO: Bio cont�m "[object Object]"');
-            console.log('Isso causa erro no JSON.parse ou na renderiza��o da p�gina');
+            console.log('\n?? PROBLEMA ENCONTRADO: Bio contem "[object Object]"');
+            console.log('Isso causa erro no JSON.parse ou na renderizaeeo da pegina');
         }
     }
     db.close();

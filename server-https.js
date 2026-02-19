@@ -1,4 +1,4 @@
-import https from 'https';
+﻿import https from 'https';
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT_HTTPS = 3001;
 
-// Servir arquivos est�ticos
+// Servir arquivos esteticos
 app.use(express.static(__dirname));
 
 // Rota para qualquer arquivo HTML
@@ -18,7 +18,7 @@ app.get('*.html', (req, res) => {
     res.sendFile(path.join(__dirname, req.path));
 });
 
-// Rota padr�o
+// Rota padreo
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'signup.html'));
 });
@@ -28,7 +28,7 @@ const certPath = path.join(__dirname, 'ssl/cert.pem');
 const keyPath = path.join(__dirname, 'ssl/key.pem');
 
 if (!fs.existsSync(certPath) || !fs.existsSync(keyPath)) {
-    console.log('? Certificados SSL n�o encontrados!');
+    console.log('? Certificados SSL neo encontrados!');
     console.log('Execute: npm run setup-ssl');
     process.exit(1);
 }
@@ -45,9 +45,9 @@ https.createServer(httpsOptions, app).listen(PORT_HTTPS, () => {
 ?  ?? HTTPS Server (Frontend)            ?
 ?  ? Rodando em https://localhost:${PORT_HTTPS}  ?
 ?  ??  Certificado auto-assinado         ?
-?  (Aceite o aviso de seguran�a)         ?
+?  (Aceite o aviso de seguranea)         ?
 ??????????????????????????????????????????
 
-?? API Backend est� em: http://localhost:5000
+?? API Backend este em: http://localhost:5000
     `);
 });

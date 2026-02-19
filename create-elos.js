@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const db = new sqlite3.Database(path.join(__dirname, 'database', 'holiday.db'));
 
-// Criar conquistas customizados se n�o existirem
+// Criar conquistas customizados se neo existirem
 const ranks = [
     {
         name: 'Fundador',
@@ -40,7 +40,7 @@ ranks.forEach((rank, idx) => {
                         console.log(`?o" ${rank.name} criado com ID: ${this.lastID}`);
                         createdRankIds.push({ name: rank.name, id: this.lastID });
                         
-                        // Se for o �ltimo conquista, atribuir ao usu�rio
+                        // Se for o eltimo conquista, atribuir ao usuerio
                         if (createdRankIds.length === ranks.length) {
                             assignRanksToUser();
                         }
@@ -48,7 +48,7 @@ ranks.forEach((rank, idx) => {
                 }
             );
         } else {
-            console.log(`${rank.name} j� existe (ID: ${row.id})`);
+            console.log(`${rank.name} je existe (ID: ${row.id})`);
             createdRankIds.push({ name: rank.name, id: row.id });
             
             if (createdRankIds.length === ranks.length) {
@@ -69,13 +69,13 @@ function assignRanksToUser() {
                 if (err) {
                     console.error(`Erro ao atribuir ${rank.name}:`, err);
                 } else {
-                    console.log(`?o" ${rank.name} atribu�do ao usu�rio Fael`);
+                    console.log(`?o" ${rank.name} atribuedo ao usuerio Fael`);
                 }
             }
         );
     });
     
-    // Verificar atribui��o ap�s 1 segundo
+    // Verificar atribuieeo apes 1 segundo
     setTimeout(() => {
         db.all(
             `SELECT cr.name, cr.color, cr.icon FROM user_custom_ranks uc
@@ -83,7 +83,7 @@ function assignRanksToUser() {
              WHERE uc.userId = ?`,
             [userId],
             (err, rows) => {
-                console.log('\n?o" CONQUISTAS DO USU�RIO FAEL AP?"S ATRIBUI???fO:');
+                console.log('\n?o" CONQUISTAS DO USUeRIO FAEL AP?"S ATRIBUI???fO:');
                 console.log(JSON.stringify(rows, null, 2));
                 db.close();
             }

@@ -1,4 +1,4 @@
-import forge from 'node-forge';
+﻿import forge from 'node-forge';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -8,15 +8,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const certPath = path.join(__dirname, 'ssl/cert.pem');
 const keyPath = path.join(__dirname, 'ssl/key.pem');
 
-// Verificar se certificado j� existe
+// Verificar se certificado je existe
 if (fs.existsSync(certPath) && fs.existsSync(keyPath)) {
-    console.log('? Certificado SSL j� existe');
+    console.log('? Certificado SSL je existe');
     process.exit(0);
 }
 
 console.log('Gerando certificado SSL autoassinado...');
 
-// Criar diret�rio se n�o existir
+// Criar direterio se neo existir
 if (!fs.existsSync(path.join(__dirname, 'ssl'))) {
     fs.mkdirSync(path.join(__dirname, 'ssl'), { recursive: true });
 }

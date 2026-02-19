@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -96,7 +96,7 @@
         }
 
         if (toggleBtn) {
-            addLog('? Bot�o encontrado, registrando evento...');
+            addLog('? Boteo encontrado, registrando evento...');
             
             toggleBtn.addEventListener('click', function(e) {
                 console.log('!!! CLICK DETECTADO !!!');
@@ -109,18 +109,18 @@
                 passwordInput.type = newType;
                 toggleBtn.textContent = isPassword ? '?' : '?';
                 
-                addLog(`Senha ${isPassword ? 'VIS�VEL' : 'OCULTA'}`);
+                addLog(`Senha ${isPassword ? 'VISeVEL' : 'OCULTA'}`);
                 addLog(`Novo tipo: ${newType}`);
-                addLog(`Novo bot�o: ${toggleBtn.textContent}`);
+                addLog(`Novo boteo: ${toggleBtn.textContent}`);
             });
             
             addLog('? EventListener registrado com sucesso');
         } else {
-            addLog('? Bot�o N�O foi encontrado!');
+            addLog('? Boteo NeO foi encontrado!');
         }
 
         // Clique manual para teste
-        addLog('Sistema pronto - clique no bot�o ?');
+        addLog('Sistema pronto - clique no boteo ?');
     </script>
 </body>
 </html>

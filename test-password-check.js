@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 import Database from 'better-sqlite3';
 import bcryptjs from 'bcryptjs';
 
@@ -18,9 +18,9 @@ if (user) {
     const isMatch = bcryptjs.compareSync(testPassword, storedHash);
     
     if (isMatch) {
-        console.log('? Senha est� CORRETA');
+        console.log('? Senha este CORRETA');
     } else {
-        console.log('? Senha est� INCORRETA');
+        console.log('? Senha este INCORRETA');
         console.log('\nTentando outras senhas comuns...');
         
         const passwords = ['senha123', 'Fael123', 'fael123', '123456', 'admin123', 'Password123'];
@@ -32,7 +32,7 @@ if (user) {
         }
     }
 } else {
-    console.log('Usu�rio n�o encontrado');
+    console.log('Usuerio neo encontrado');
 }
 
 db.close();

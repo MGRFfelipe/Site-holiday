@@ -1,12 +1,12 @@
 ﻿#!/usr/bin/env node
 
 /**
- * TESTE FINAL - Validar que tudo est� funcionando
+ * TESTE FINAL - Validar que tudo este funcionando
  * Verifica:
  * 1. Login funciona
  * 2. Profile API retorna dados
  * 3. Rank system funciona
- * 4. Upload paths est�o corretos
+ * 4. Upload paths esteo corretos
  */
 
 import http from 'http';
@@ -66,7 +66,7 @@ async function runTests() {
         console.log('Status:', profileRes.status);
 
         if (!profileRes.body.success) {
-            // Tentar com token no header (se necess�rio)
+            // Tentar com token no header (se necesserio)
             console.log('?O Profile sem token. Tentando outra forma...');
         } else {
             console.log('?o. Profile API funcionando!');
@@ -76,7 +76,7 @@ async function runTests() {
             
             if (profileRes.body.rankComplete) {
                 console.log('   - conquista Atual:', profileRes.body.rankComplete.current?.name);
-                console.log('   - conquista Autom�tico:', profileRes.body.rankComplete.automatic?.name);
+                console.log('   - conquista Autometico:', profileRes.body.rankComplete.automatic?.name);
                 console.log('   - conquistas Customizados:', profileRes.body.rankComplete.custom?.length || 0);
             }
         }
@@ -94,7 +94,7 @@ async function runTests() {
         }
 
         console.log('\n' + '='.repeat(60));
-        console.log('?o. TESTES CONCLU�DOS COM SUCESSO!');
+        console.log('?o. TESTES CONCLUeDOS COM SUCESSO!');
         console.log('='.repeat(60));
         console.log('\n?Y"? Resumo dos Arquivos Modificados:');
         console.log('  ?o. profile.js - renderRankHistory() atualizado com 14 conquistas');
@@ -102,7 +102,7 @@ async function runTests() {
         console.log('  ?o. backend/middleware/upload.js - Multer corrigido');
         console.log('\n?Ys? Para testar a interface:');
         console.log('  1. Abra http://localhost:3000/profile.html');
-        console.log('  2. Verifique que os 14 conquistas aparecem na se��o "Hist�rico de conquistas"');
+        console.log('  2. Verifique que os 14 conquistas aparecem na seeeo "Histerico de conquistas"');
         console.log('  3. Teste upload clicando em avatar/banner');
         console.log('  4. Edite perfil e altere senha');
         console.log('\n');

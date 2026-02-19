@@ -1,10 +1,10 @@
-// ========== LOGIN SCRIPT v2 - SUPER SIMPLES ==========
+﻿// ========== LOGIN SCRIPT v2 - SUPER SIMPLES ==========
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('=== DOM CARREGADO ===');
     const TRUSTED_DEVICE_TOKEN_KEY = 'holidayTrustedDeviceToken';
 
-    // Se veio mensagem de redirecionamento (ex.: sess�o inv�lida/bloqueada), exibir no formul�rio.
+    // Se veio mensagem de redirecionamento (ex.: sesseo invelida/bloqueada), exibir no formulerio.
     const urlParams = new URLSearchParams(window.location.search);
     const messageParam = urlParams.get('message');
     const formErrorEl = document.getElementById('formError');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         console.log('? Toggle de senha configurado');
     } else {
-        console.error('? Elementos n�o encontrados:', { toggleBtn, passwordInput });
+        console.error('? Elementos neo encontrados:', { toggleBtn, passwordInput });
     }
     
     // ===== LOGIN =====
@@ -108,13 +108,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (twoFactorCodeLabel) {
             twoFactorCodeLabel.textContent = normalized === 'email'
-                ? 'C�digo enviado por e-mail'
-                : 'C�digo Authenticator (2FA)';
+                ? 'Cedigo enviado por e-mail'
+                : 'Cedigo Authenticator (2FA)';
         }
         if (twoFactorCodeInput) {
             twoFactorCodeInput.placeholder = normalized === 'email'
-                ? 'Digite o c�digo recebido no e-mail'
-                : 'Digite os 6 d�gitos do Authenticator';
+                ? 'Digite o cedigo recebido no e-mail'
+                : 'Digite os 6 degitos do Authenticator';
         }
         if (sendTwoFactorEmailBtn) {
             sendTwoFactorEmailBtn.style.display = normalized === 'email' ? 'block' : 'none';
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const setSubmitLoading = (loading, text = 'Entrar') => {
         if (!submitBtn) return;
         submitBtn.disabled = Boolean(loading);
-        submitBtn.textContent = loading ? text : (pendingTwoFactorTicket ? 'Verificar c�digo' : 'Entrar');
+        submitBtn.textContent = loading ? text : (pendingTwoFactorTicket ? 'Verificar cedigo' : 'Entrar');
     };
 
     const setTwoFactorMode = (enabled, methods = []) => {
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formOptions.style.pointerEvents = active ? 'none' : '';
         }
         if (submitBtn) {
-            submitBtn.textContent = active ? 'Verificar c�digo' : 'Entrar';
+            submitBtn.textContent = active ? 'Verificar cedigo' : 'Entrar';
         }
 
         if (active) {
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const sendTwoFactorEmailCode = async () => {
         if (!pendingTwoFactorTicket) {
-            formError.textContent = 'Sess�o 2FA inv�lida. Tente fazer login novamente.';
+            formError.textContent = 'Sesseo 2FA invelida. Tente fazer login novamente.';
             return;
         }
 
@@ -188,17 +188,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const result = await AuthAPI.sendTwoFactorEmailCode(pendingTwoFactorTicket);
             if (result?.success) {
                 formError.textContent = '';
-                setTwoFactorInfo(result.message || 'C�digo enviado para seu e-mail.');
+                setTwoFactorInfo(result.message || 'Cedigo enviado para seu e-mail.');
             } else {
-                formError.textContent = result?.message || 'Erro ao enviar c�digo por e-mail';
+                formError.textContent = result?.message || 'Erro ao enviar cedigo por e-mail';
             }
         } catch (error) {
-            console.error('Erro ao enviar c�digo 2FA por e-mail:', error);
-            formError.textContent = 'Erro ao enviar c�digo por e-mail';
+            console.error('Erro ao enviar cedigo 2FA por e-mail:', error);
+            formError.textContent = 'Erro ao enviar cedigo por e-mail';
         } finally {
             if (sendTwoFactorEmailBtn) {
                 sendTwoFactorEmailBtn.disabled = false;
-                sendTwoFactorEmailBtn.textContent = 'Enviar c�digo por e-mail';
+                sendTwoFactorEmailBtn.textContent = 'Enviar cedigo por e-mail';
             }
         }
     };
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (urlNick && urlPass) {
         nicknameInput.value = urlNick;
         passwordInput.value = urlPass;
-        console.log('? Formul�rio preenchido com params da URL');
+        console.log('? Formulerio preenchido com params da URL');
     }
 
     if (twoFactorMethodAuthenticatorBtn) {
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            console.log('=== SUBMIT DO FORMUL�RIO ===');
+            console.log('=== SUBMIT DO FORMULeRIO ===');
 
             const nickname = nicknameInput.value.trim();
             const password = passwordInput.value;
@@ -264,8 +264,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const code = String(twoFactorCodeInput?.value || '').replace(/\s+/g, '').trim();
                 if (!/^\d{6}$/.test(code)) {
                     formError.textContent = currentTwoFactorMethod === 'email'
-                        ? 'Digite o c�digo de 6 d�gitos enviado por e-mail'
-                        : 'Digite o c�digo de 6 d�gitos do Authenticator';
+                        ? 'Digite o cedigo de 6 degitos enviado por e-mail'
+                        : 'Digite o cedigo de 6 degitos do Authenticator';
                     return;
                 }
 
@@ -297,10 +297,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
 
                     AuthAPI.removeToken();
-                    formError.textContent = verifyResult.message || 'C�digo inv�lido';
+                    formError.textContent = verifyResult.message || 'Cedigo invelido';
                 } catch (error) {
-                    console.error('Erro na verifica��o 2FA:', error);
-                    formError.textContent = 'Erro ao validar c�digo';
+                    console.error('Erro na verificaeeo 2FA:', error);
+                    formError.textContent = 'Erro ao validar cedigo';
                 } finally {
                     setSubmitLoading(false);
                 }
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
             setSubmitLoading(true, 'Entrando...');
 
             try {
-                // Impede reutiliza��o de sess�o anterior (ex.: outro usu�rio logado no mesmo navegador).
+                // Impede reutilizaeeo de sesseo anterior (ex.: outro usuerio logado no mesmo navegador).
                 AuthAPI.removeToken();
                 const trustedDeviceToken = getTrustedDeviceToken();
 
@@ -331,13 +331,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         clearTrustedDeviceToken();
                     }
                     if (!result.loginTicket) {
-                        formError.textContent = 'Falha ao iniciar valida��o 2FA';
+                        formError.textContent = 'Falha ao iniciar validaeeo 2FA';
                         setSubmitLoading(false);
                         return;
                     }
                     pendingTwoFactorTicket = result.loginTicket;
                     setTwoFactorMode(true, result.twoFactorMethods);
-                    formError.textContent = result.message || 'Digite o c�digo 2FA para continuar.';
+                    formError.textContent = result.message || 'Digite o cedigo 2FA para continuar.';
                     setSubmitLoading(false);
                     return;
                 }
@@ -362,14 +362,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         window.location.href = 'profile.html';
                     }, 100);
                 } else {
-                    // Em falha de login (incluindo banimento), garantir que n�o exista token residual.
+                    // Em falha de login (incluindo banimento), garantir que neo exista token residual.
                     AuthAPI.removeToken();
                     formError.textContent = result.message || 'Erro ao fazer login';
                     console.error('Erro:', result.message);
                     setSubmitLoading(false);
                 }
             } catch (error) {
-                console.error('Erro na requisi��o:', error);
+                console.error('Erro na requisieeo:', error);
                 formError.textContent = 'Erro ao conectar ao servidor';
                 setSubmitLoading(false);
             }

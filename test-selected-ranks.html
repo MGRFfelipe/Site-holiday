@@ -56,7 +56,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>DEBUG - System de Sele��o de conquistas</h1>
+        <h1>DEBUG - System de Seleeeo de conquistas</h1>
         
         <div class="section">
             <h3>1. Teste de Login</h3>
@@ -65,19 +65,19 @@
         </div>
 
         <div class="section">
-            <h3>2. Teste de Obten��o de conquistas Customizados</h3>
+            <h3>2. Teste de Obteneeo de conquistas Customizados</h3>
             <button onclick="testGetCustomRanks()">Obter conquistas Customizados</button>
             <div id="customRanksLog" class="log"></div>
         </div>
 
         <div class="section">
-            <h3>3. Teste de Sele��o de conquistas</h3>
+            <h3>3. Teste de Seleeeo de conquistas</h3>
             <button onclick="testSelectRanks()">Selecionar IDs: [1, 2, 3]</button>
             <div id="selectLog" class="log"></div>
         </div>
 
         <div class="section">
-            <h3>4. Teste de Recupera��o de conquistas Selecionados</h3>
+            <h3>4. Teste de Recuperaeeo de conquistas Selecionados</h3>
             <button onclick="testGetSelectedRanks()">Obter conquistas Selecionados</button>
             <div id="retrieveLog" class="log"></div>
         </div>
@@ -129,7 +129,7 @@
                     addLog(logId, `?o- Erro no login: ${data.message}`, 'error');
                 }
             } catch (err) {
-                addLog(logId, `?o- Erro na requisi��o: ${err.message}`, 'error');
+                addLog(logId, `?o- Erro na requisieeo: ${err.message}`, 'error');
             }
         }
 
@@ -138,7 +138,7 @@
             document.getElementById(logId).innerHTML = '';
 
             if (!currentToken) {
-                addLog(logId, '?o- Fa�a login primeiro!', 'error');
+                addLog(logId, '?o- Faea login primeiro!', 'error');
                 return;
             }
 
@@ -168,7 +168,7 @@
             document.getElementById(logId).innerHTML = '';
 
             if (!currentToken) {
-                addLog(logId, '?o- Fa�a login primeiro!', 'error');
+                addLog(logId, '?o- Faea login primeiro!', 'error');
                 return;
             }
 
@@ -194,7 +194,7 @@
             document.getElementById(logId).innerHTML = '';
 
             if (!currentToken) {
-                addLog(logId, '?o- Fa�a login primeiro!', 'error');
+                addLog(logId, '?o- Faea login primeiro!', 'error');
                 return;
             }
 
@@ -291,7 +291,7 @@
                 if (JSON.stringify(result.rankIds) === JSON.stringify(rankIds)) {
                     addLog(logId, '?o"?o" SUCESSO! Os IDs correspondem!', 'success');
                 } else {
-                    addLog(logId, `?s?? ATEN???fO: IDs n�o correspondem!`, 'error');
+                    addLog(logId, `?s?? ATEN???fO: IDs neo correspondem!`, 'error');
                     addLog(logId, `  Esperado: ${JSON.stringify(rankIds)}`, 'error');
                     addLog(logId, `  Recebido: ${JSON.stringify(result.rankIds)}`, 'error');
                 }
@@ -307,15 +307,15 @@
             try {
                 const result = await AuthAPI.getSelectedProfileRanks();
                 if (result.success && JSON.stringify(result.rankIds) === JSON.stringify(rankIds)) {
-                    addLog(logId, '?o"?o"?o" PERFEITO! Os conquistas persistiram ap�s reload!', 'success');
+                    addLog(logId, '?o"?o"?o" PERFEITO! Os conquistas persistiram apes reload!', 'success');
                 } else {
-                    addLog(logId, '?o- FALHA: Os conquistas n�o persistiram!', 'error');
+                    addLog(logId, '?o- FALHA: Os conquistas neo persistiram!', 'error');
                 }
             } catch (err) {
                 addLog(logId, `?o- Erro: ${err.message}`, 'error');
             }
 
-            addLog(logId, '=== TESTE CONCLU�DO ===', 'info');
+            addLog(logId, '=== TESTE CONCLUeDO ===', 'info');
         }
     </script>
 </body>
