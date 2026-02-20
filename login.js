@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         console.log('? Toggle de senha configurado');
     } else {
-        console.error('? Elementos neo encontrados:', { toggleBtn, passwordInput });
+        console.error('? Elementos nao encontrados:', { toggleBtn, passwordInput });
     }
     
     // ===== LOGIN =====
@@ -108,8 +108,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (twoFactorCodeLabel) {
             twoFactorCodeLabel.textContent = normalized === 'email'
-                ? 'Cedigo enviado por e-mail'
-                : 'Cedigo Authenticator (2FA)';
+                ? 'Codigo enviado por e-mail'
+                : 'Codigo Authenticator (2FA)';
         }
         if (twoFactorCodeInput) {
             twoFactorCodeInput.placeholder = normalized === 'email'
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const result = await AuthAPI.sendTwoFactorEmailCode(pendingTwoFactorTicket);
             if (result?.success) {
                 formError.textContent = '';
-                setTwoFactorInfo(result.message || 'Cedigo enviado para seu e-mail.');
+                setTwoFactorInfo(result.message || 'Codigo enviado para seu e-mail.');
             } else {
                 formError.textContent = result?.message || 'Erro ao enviar cedigo por e-mail';
             }
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
 
                     AuthAPI.removeToken();
-                    formError.textContent = verifyResult.message || 'Cedigo invelido';
+                    formError.textContent = verifyResult.message || 'Codigo invelido';
                 } catch (error) {
                     console.error('Erro na verificaeeo 2FA:', error);
                     formError.textContent = 'Erro ao validar cedigo';
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         window.location.href = 'profile.html';
                     }, 100);
                 } else {
-                    // Em falha de login (incluindo banimento), garantir que neo exista token residual.
+                    // Em falha de login (incluindo banimento), garantir que nao exista token residual.
                     AuthAPI.removeToken();
                     formError.textContent = result.message || 'Erro ao fazer login';
                     console.error('Erro:', result.message);
@@ -378,3 +378,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('=== SCRIPT PRONTO ===');
 });
+

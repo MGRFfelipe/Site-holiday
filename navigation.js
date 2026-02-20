@@ -116,6 +116,16 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = resolveFallbackSource(img);
     }
 
+    function scanBrokenImages() {
+        document.querySelectorAll('img').forEach((img) => {
+            if (img.dataset.fallbackApplied === '1') return;
+            // Complete + largura zero normalmente indica erro de carregamento.
+            if (img.complete && (!img.naturalWidth || img.naturalWidth < 1)) {
+                applyImageFallback(img);
+            }
+        });
+    }
+
     document.addEventListener(
         'error',
         (event) => {
@@ -127,9 +137,22 @@ document.addEventListener('DOMContentLoaded', () => {
         true
     );
 
-    document.querySelectorAll('img').forEach((img) => {
-        if (img.complete && img.naturalWidth === 0) {
-            applyImageFallback(img);
-        }
+    // Primeira varredura imediata
+    scanBrokenImages();
+
+    // Segunda varredura quando tudo da pagina terminar de carregar
+    window.addEventListener('load', () => {
+        scanBrokenImages();
     });
+
+    // Varreduras extras para casos de 404 que chegam depois do DOMContentLoaded
+    let retries = 0;
+    const maxRetries = 8;
+    const timer = setInterval(() => {
+        retries += 1;
+        scanBrokenImages();
+        if (retries >= maxRetries) {
+            clearInterval(timer);
+        }
+    }, 1200);
 });

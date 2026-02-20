@@ -19,7 +19,7 @@ function resolveApiUrl() {
         return 'http://localhost:8080/api';
     }
 
-    // Produeeo: fallback fixo para evitar erro quando neo existir rewrite /api no host estetico.
+    // Produeeo: fallback fixo para evitar erro quando nao existir rewrite /api no host estetico.
     return 'https://guildholiday.discloud.app/api';
 }
 
@@ -27,7 +27,7 @@ const API_URL = resolveApiUrl();
 
 class AuthAPI {
     static getToken() {
-        // Usar AuthManager se disponevel, seneo fallback para localStorage
+        // Usar AuthManager se disponevel, senao fallback para localStorage
         return typeof AuthManager !== 'undefined' ? AuthManager.getToken() : localStorage.getItem('token');
     }
 
@@ -253,7 +253,7 @@ class AuthAPI {
 
     static async updateProfile(formData) {
         try {
-            // Para FormData, neo enviar Content-Type (navegador faz isso automaticamente)
+            // Para FormData, nao enviar Content-Type (navegador faz isso automaticamente)
             const headers = {
                 'Authorization': `Bearer ${this.getToken()}`
             };
@@ -753,7 +753,7 @@ class AuthAPI {
         }
     }
 
-    // Selecionar conquistas customizeveis para exibir no perfil (meximo 4)
+    // Selecionar conquistas customizeveis para exibir no perfil (maximo 4)
     static async selectProfileRanks(rankIds) {
         try {
             // rankIds deve ser um array com ate 4 IDs de custom ranks
@@ -1289,7 +1289,7 @@ class AuthAPI {
 
     // ===================== NOTIFICAeeES =====================
 
-    // Obter notificaeees neo lidas
+    // Obter notificaeees nao lidas
     static async getUnreadNotifications() {
         try {
             const response = await fetch(`${API_URL}/downloads/notifications/unread`, {
@@ -1317,7 +1317,7 @@ class AuthAPI {
         }
     }
 
-    // Contar notificaeees neo lidas
+    // Contar notificaeees nao lidas
     static async getNotificationCount() {
         try {
             const response = await fetch(`${API_URL}/downloads/notifications/count`, {
@@ -1387,5 +1387,6 @@ class AuthAPI {
         }
     }
 }
+
 
 

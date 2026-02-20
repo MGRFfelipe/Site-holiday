@@ -261,7 +261,7 @@ body {
     }
 }
 
-/* Nuvens da Galexia - Background com animaeeo de flash */
+/* Nuvens da Galexia - Background com animacao de flash */
 .cloud-bg-1 {
     position: absolute;
     width: 300px;
@@ -1180,7 +1180,7 @@ header h1:hover {
     transform: translateY(-5px) scale(1.15) rotate(5deg);
 }
 
-/* Navbar icon buttons (WhatsApp, Discord, Notificaeees, Sair) */
+/* Navbar icon buttons (WhatsApp, Discord, Notificacoes, Sair) */
 .navbar-buttons .icon-btn {
     padding: 0 !important;
     display: inline-flex;
@@ -2443,6 +2443,7 @@ footer p {
 .notifications-modal::-webkit-scrollbar-thumb:hover {
     background: rgba(236, 72, 153, 0.6);
 }
+
 
 
 

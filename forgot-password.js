@@ -1,4 +1,4 @@
-let resetEmail = '';
+﻿let resetEmail = '';
 let codeVerified = false;
 let verificationTimer = null;
 let cooldownInterval = null;
@@ -145,7 +145,7 @@ resetPasswordForm.addEventListener('submit', async (e) => {
     }
 
     if (newPassword.length < 6) {
-        resetError.textContent = 'Senha deve ter no minimo 6 caracteres.';
+        resetError.textContent = 'Senha deve ter no minimo 6 caracteras.';
         return;
     }
 
@@ -238,3 +238,4 @@ function clearErrors() {
     resetError.textContent = '';
     resetError.style.color = '';
 }
+

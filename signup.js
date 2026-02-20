@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
     
     if (!signupForm) {
-        console.error(' Formulerio de signup neo encontrado!');
+        console.error(' Formulerio de signup nao encontrado!');
         return;
     }
     
@@ -44,12 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (firstName.length < 2) {
-            document.getElementById('firstNameError').textContent = 'Primeiro nome deve ter pelo menos 2 caracteres';
+            document.getElementById('firstNameError').textContent = 'Primeiro nome deve ter pelo menos 2 caracteras';
             return;
         }
 
         if (lastName.length < 2) {
-            document.getElementById('lastNameError').textContent = 'Sobrenome deve ter pelo menos 2 caracteres';
+            document.getElementById('lastNameError').textContent = 'Sobrenome deve ter pelo menos 2 caracteras';
             return;
         }
 
@@ -59,12 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (password.length < 6) {
-            document.getElementById('passwordError').textContent = 'Senha deve ter no menimo 6 caracteres';
+            document.getElementById('passwordError').textContent = 'Senha deve ter no menimo 6 caracteras';
             return;
         }
 
         if (password !== confirmPassword) {
-            document.getElementById('confirmPasswordError').textContent = 'Senhas neo conferem';
+            document.getElementById('confirmPasswordError').textContent = 'Senhas nao conferem';
             return;
         }
 
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Email verificado com sucesso! ');
                 window.location.href = 'profile.html';
             } else {
-                document.getElementById('verifyError').textContent = result.message || 'Cedigo invelido ou expirado';
+                document.getElementById('verifyError').textContent = result.message || 'Codigo invelido ou expirado';
                 console.error('Erro:', result.message);
             }
         });
@@ -153,7 +153,7 @@ function startVerificationTimer() {
     const resendBtn = document.getElementById('resendBtn');
     
     if (!timerElement || !resendBtn) {
-        console.warn('Elementos de timer neo encontrados');
+        console.warn('Elementos de timer nao encontrados');
         return;
     }
 
@@ -166,7 +166,7 @@ function startVerificationTimer() {
         
         if (timeLeft <= 0) {
             clearVerificationTimer();
-            timerElement.textContent = 'Cedigo expirado! Reenvie um novo cedigo.';
+            timerElement.textContent = 'Codigo expirado! Reenvie um novo cedigo.';
             timerElement.style.color = '#FF0000';
             document.getElementById('verifyForm').style.pointerEvents = 'none';
             document.getElementById('verifyForm').style.opacity = '0.5';
@@ -177,7 +177,7 @@ function startVerificationTimer() {
 function updateTimerDisplay(seconds, element) {
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    element.textContent = `Velido por ${minutes}:${secs.toString().padStart(2, '0')}`;
+    element.textContent = `Valido por ${minutes}:${secs.toString().padStart(2, '0')}`;
 }
 
 function clearVerificationTimer() {
@@ -216,12 +216,12 @@ async function resendVerificationCode() {
         // Spinner no boteo
         setTimeout(() => {
             resendBtn.disabled = false;
-            resendBtn.textContent = 'Reenviar Cedigo';
+            resendBtn.textContent = 'Reenviar Codigo';
         }, 2000);
     } else {
         document.getElementById('verifyError').textContent = result.message || 'Erro ao reenviar cedigo';
         resendBtn.disabled = false;
-        resendBtn.textContent = 'Reenviar Cedigo';
+        resendBtn.textContent = 'Reenviar Codigo';
     }
 }
 
@@ -243,3 +243,4 @@ function clearErrors() {
         if (element) element.textContent = '';
     });
 }
+

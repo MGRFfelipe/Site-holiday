@@ -44,9 +44,9 @@
     <nav class="navbar">
         <div class="container navbar-container">
             <div class="nav-links">
-                <a href="index.html" class="nav-link">Inecio</a>
+                <a href="index.html" class="nav-link">Inicio</a>
                 <a href="dicas.html" class="nav-link">Comandos & Dicas</a>
-                <a href="lag.html" class="nav-link">Customizaeeo</a>
+                <a href="lag.html" class="nav-link">Customizacao</a>
                 <a href="downloads.html" class="nav-link">Downloads</a>
                 <a href="profile.html" class="nav-link active">Perfil</a>
             </div>
@@ -57,8 +57,8 @@
                 <a href="https://discord.gg/KEc4ZdR3" class="btn-navbar btn-discord icon-btn" target="_blank" aria-label="Discord">
                     <img src="/imagens/Discord.png" alt="Discord" class="navbar-icon" width="16" height="16">
                 </a>
-                <button id="notificationBell" class="btn-navbar btn-notifications icon-btn" style="position: relative; display: none;" aria-label="Notificaeees">
-                    <img src="/imagens/Sino.png" alt="Notificaeees" class="navbar-icon" width="16" height="16">
+                <button id="notificationBell" class="btn-navbar btn-notifications icon-btn" style="position: relative; display: none;" aria-label="Notificacoes">
+                    <img src="/imagens/Sino.png" alt="Notificacoes" class="navbar-icon" width="16" height="16">
                     <span id="notificationBadge" class="notification-badge" style="display: none;"></span>
                 </button>
                 <button id="logoutBtn" class="btn-navbar btn-logout icon-btn" style="display: none;" aria-label="Sair" title="Sair">
@@ -86,7 +86,7 @@
                 <input type="file" id="bannerInput" accept="image/*" style="display: none;">
             </div>
 
-            <!-- Informaeees Principais -->
+            <!-- Informacoes Principais -->
             <div class="profile-main">
                 <div class="profile-avatar-section">
                     <div class="profile-avatar" id="profileAvatar"></div>
@@ -149,11 +149,11 @@
         </div>
     </main>
 
-    <!-- Modal de Edieeo de Perfil -->
+    <!-- Modal de Edicao de Perfil -->
     <div id="editModal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Configuraeees da Conta</h2>
+            <h2>Configuracoes da Conta</h2>
             
             <!-- Abas -->
             <div class="modal-tabs">
@@ -206,7 +206,7 @@
                         <small id="taglineCount">0/120</small>
                     </div>
 
-                    <button type="submit" class="btn-submit">Salvar Alteraeees</button>
+                    <button type="submit" class="btn-submit">Salvar Alteracoes</button>
                     <span class="error-message" id="editError"></span>
                 </form>
             </div>
@@ -214,26 +214,26 @@
             <!-- Aba: Minhas Conquistas -->
             <div id="conquistas-tab" class="tab-content">
                 <div class="notif-settings-box">
-                    <h4 class="notif-settings-title">Notificaeees</h4>
+                    <h4 class="notif-settings-title">Notificacoes</h4>
                     <label class="notif-setting-item">
                         <input type="checkbox" id="disableCommentNotifications">
-                        <span>Desativar notificaeees de comenterios</span>
+                        <span>Desativar notificacoes de comentarios</span>
                     </label>
                     <label class="notif-setting-item">
                         <input type="checkbox" id="disableLikeNotifications">
-                        <span>Desativar notificaeees de likes</span>
+                        <span>Desativar notificacoes de likes</span>
                     </label>
                     <label class="notif-setting-item">
                         <input type="checkbox" id="disableAchievementNotifications">
-                        <span>Desativar notificaeeo de ganho de conquista</span>
+                        <span>Desativar notificacao de ganho de conquista</span>
                     </label>
                     <label class="notif-setting-item all">
                         <input type="checkbox" id="disableAllNotifications">
-                        <span>Desativar todas as notificaeees</span>
+                        <span>Desativar todas as notificacoes</span>
                     </label>
                 </div>
 
-                <h3 style="margin-top: 0; color: #EC4899;">Configuraeeo de conquistas</h3>
+                <h3 style="margin-top: 0; color: #EC4899;">Configuracao de conquistas</h3>
 
                 <div class="conquista-expand-options">
                     <button type="button" class="conquista-expand-btn active" data-target="conquista-conquistas-section">Minhas Conquistas</button>
@@ -262,7 +262,7 @@
                         </div>
                         <div class="conquista-stat-box">
                             <div class="conquista-stat-value"><span id="totalHeartsReceived">0</span></div>
-                            <div class="conquista-stat-label">Coraeees</div>
+                            <div class="conquista-stat-label">Coracoes</div>
                         </div>
                     </div>
 
@@ -270,8 +270,8 @@
                         <div class="conquista-current-icon" id="currentRankIcon">?</div>
                         <div class="conquista-current-info">
                             <h4 id="currentRankName">Sem conquista</h4>
-                            <p id="currentRankDesc">Faea sua primeira postagem</p>
-                            <p id="nextPostageRankHint">Faea sua primeira postagem para desbloquear o primeiro conquista.</p>
+                            <p id="currentRankDesc">Faca sua primeira postagem</p>
+                            <p id="nextPostageRankHint">Faca sua primeira postagem para desbloquear o primeiro conquista.</p>
                         </div>
                     </div>
 
@@ -303,7 +303,7 @@
                         </div>
                         <div class="conquista-stat-box">
                             <div class="conquista-stat-value"><span id="totalHeartsLikesTab">0</span></div>
-                            <div class="conquista-stat-label">Coraeees</div>
+                            <div class="conquista-stat-label">Coracoes</div>
                         </div>
                     </div>
 
@@ -352,7 +352,7 @@
 
                     <div class="form-group">
                         <label for="newPassword">Nova Senha</label>
-                        <input type="password" id="newPassword" required placeholder="Menimo 6 caracteres">
+                        <input type="password" id="newPassword" required placeholder="Minimo 6 caracteres">
                     </div>
 
                     <div class="form-group">
@@ -366,7 +366,7 @@
 
                 <div class="two-factor-box">
                     <h3>Authenticator (2FA)</h3>
-                    <p class="two-factor-help">Opcional. Ao ativar, no login voce pode validar por Authenticator ou por cedigo enviado no e-mail.</p>
+                    <p class="two-factor-help">Opcional. Ao ativar, no login voce pode validar por Authenticator ou por codigo enviado no e-mail.</p>
 
                     <div class="two-factor-status-row">
                         <span>Status:</span>
@@ -374,7 +374,7 @@
                     </div>
 
                     <div id="twoFactorSettingsRow" class="two-factor-settings-row" style="display: none;">
-                        <label for="twoFactorRememberDays">Pedir 2FA novamente apes:</label>
+                        <label for="twoFactorRememberDays">Pedir 2FA novamente apos:</label>
                         <select id="twoFactorRememberDays">
                             <option value="0">Desativado</option>
                             <option value="3">3 dias</option>
@@ -395,10 +395,10 @@
                         <div id="twoFactorQrWrap" class="two-factor-qr-wrap" style="display: none;">
                             <img id="twoFactorQrImage" class="two-factor-qr-image" src="" alt="QR Code do Authenticator">
                         </div>
-                        <p class="two-factor-step">2. Digite abaixo o cedigo gerado no app para ativar.</p>
+                        <p class="two-factor-step">2. Digite abaixo o codigo gerado no app para ativar.</p>
 
                         <div class="form-group">
-                            <label for="twoFactorEnableCode">Cedigo de Ativaeeo</label>
+                            <label for="twoFactorEnableCode">Codigo de Ativacao</label>
                             <input type="text" id="twoFactorEnableCode" maxlength="6" inputmode="numeric" placeholder="000000">
                         </div>
                         <button type="button" id="enableTwoFactorBtn" class="btn-submit two-factor-action-btn">Ativar 2FA</button>
@@ -407,12 +407,12 @@
                     <div id="twoFactorDisablePanel" class="two-factor-panel" style="display: none;">
                         <button type="button" id="showDisableTwoFactorFormBtn" class="btn-submit two-factor-danger-btn">Desativar 2FA</button>
                         <div id="disableTwoFactorFormWrap" style="display: none; margin-top: 12px;">
-                            <p class="two-factor-step">Para desativar, digite um cedigo atual do app Authenticator.</p>
+                            <p class="two-factor-step">Para desativar, digite um codigo atual do app Authenticator.</p>
                             <div class="form-group">
-                                <label for="twoFactorDisableCode">Cedigo para Desativar</label>
+                                <label for="twoFactorDisableCode">Codigo para Desativar</label>
                                 <input type="text" id="twoFactorDisableCode" maxlength="6" inputmode="numeric" placeholder="000000">
                             </div>
-                            <button type="button" id="disableTwoFactorBtn" class="btn-submit two-factor-danger-btn">Confirmar desativaeeo</button>
+                            <button type="button" id="disableTwoFactorBtn" class="btn-submit two-factor-danger-btn">Confirmar desativacao</button>
                         </div>
                     </div>
 
@@ -488,7 +488,7 @@
                         <input type="file" id="animatedCustomGifFile" accept="image/gif">
                         <button type="button" id="uploadAnimatedGifBtn" class="btn-random-tagline">Enviar GIF</button>
                     </div>
-                    <small>Limite meximo: 500KB por GIF.</small>
+                    <small>Limite maximo: 500KB por GIF.</small>
                 </div>
 
                 <div class="animated-profile-preview-wrap">
@@ -510,7 +510,7 @@
         </div>
     </div>
 
-    <!-- Modal de Alteraeeo de Email -->
+    <!-- Modal de Alteracao de Email -->
     <div id="changeEmailModal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close" id="closeChangeEmailModal">&times;</span>
@@ -528,15 +528,15 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Cedigo de Confirmaeeo</label>
+                    <label>Codigo de Confirmacao</label>
                     <div class="code-input-wrapper">
-                        <input type="text" id="emailVerificationCode" placeholder="Cedigo enviado para seu email atual" maxlength="6" required>
-                        <button type="button" id="sendEmailCodeBtn" class="btn-send-code">Enviar Cedigo</button>
+                        <input type="text" id="emailVerificationCode" placeholder="Codigo enviado para seu email atual" maxlength="6" required>
+                        <button type="button" id="sendEmailCodeBtn" class="btn-send-code">Enviar Codigo</button>
                     </div>
-                    <small style="color: rgba(255,255,255,0.5); margin-top: 5px; display: block;">Um cedigo sere enviado para seu email atual</small>
+                    <small style="color: rgba(255,255,255,0.5); margin-top: 5px; display: block;">Um codigo sere enviado para seu email atual</small>
                 </div>
                 
-                <button type="submit" class="btn-submit">Confirmar Alteraeeo</button>
+                <button type="submit" class="btn-submit">Confirmar Alteracao</button>
                 <span class="error-message" id="changeEmailError"></span>
             </form>
         </div>
@@ -559,6 +559,9 @@
     <script src="profile.js"></script>
 </body>
 </html>
+
+
+
 
 
 
